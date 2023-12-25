@@ -19,11 +19,11 @@ export default function HeroSection() {
     AOS.init({ duration: 800 });
   }, []);
   const bulletPoints = [
-    "Computer Science Major @ UC Berkeley",
-    "Full Stack SWE Intern @ FlowGPT",
-    "SWE Intern @ Zettablock",
-    "Developer, Governance @ Blockchain at Berkeley",
-    "Previous: DS Intern @ Circle",
+    "EECS and Industrial Engineering and Operations Research (IEOR) Double Major @ UC Berkeley",
+    "SWE Intern @ Utopic AI",
+    "Product Management Intern @ RoverX (YC S21)",
+    "XRP Ledger Lead Campus Ambassador",
+    "Previous: PM Intern @ Avalanche Computing",
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
