@@ -19,14 +19,14 @@ const Header: React.FC = () => {
             </Link>
           </Box>
           <HStack spacing={4} zIndex="99">
-            <Link href="https://github.com/adriankwann" isExternal>
+            <Link href="https://github.com/ethan-m-lam" isExternal>
               <FaGithub size={24} />
             </Link>
 
             <Link href="https://twitter.com/adriankwann" isExternal>
               <FaTwitter size={24} />
             </Link>
-            <Link href="https://www.linkedin.com/in/adrianzykwan/" isExternal>
+            <Link href="https://www.linkedin.com/in/ethan-m-lam/" isExternal>
               <FaLinkedin size={24} />
             </Link>
           </HStack>

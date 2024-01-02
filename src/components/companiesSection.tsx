@@ -3,50 +3,50 @@ import { Box, Heading, Grid } from "@chakra-ui/react";
 import ClubCard from "./clubcard"; // Make sure to import ClubCard component
 
 const zbDescription = [
-  "The First Full-stack Real-time Web3 Data Infrastructure.",
-  "Su23: Software Engineering Intern",
-  "Project: NL to SQL AI Assistant",
+  "A NFT notification and blockchain analytics app",
+  "Su23: Product Management Intern",
+  "Project: Case study on Payments",
 ];
 
 const flowDescription = [
-  "A community for anyone to share and discover the best LLM prompts",
-  "Su23: Full-Stack Software Engineering Intern",
-  "Project: Building Collections Feature (Similar to Spotify Playlists, for Prompts)",
+  "An use-to-earn social media platform",
+  "Su23: Software Engineering Intern",
+  "Project: One-Click NFT Minting on Website",
 ];
 
 const circleDescription = [
-  "Issuer of USDC, the world’s leading digital dollar stablecoin.",
-  "Su22: Data Science Intern",
-  "Project: Web app for visualizing and analyzing transactional data among stablecoins",
+  "SAAS tool for speeding up machine learning training",
+  "Su22: Product Management Intern",
+  "Project: Business operations, and identification of customers",
 ];
 
 const auguryDescription = [
-  "Predictive, prescriptive AI for industrial manufacturing.",
-  "Su21: Product Strategy Intern",
+  "Autonomous sensing and collision prediction tech",
+  "Su22: Product Management Intern",
 ];
 const companies = [
   {
     logo: "https://pbs.twimg.com/profile_images/1587543750271811584/ZyZ6Zhg__400x400.jpg",
-    caption: "Zettablock",
-    link: "https://zettablock.com/",
+    caption: "Utopic.ai",
+    link: "https://utopic.ai",
     description: zbDescription,
   },
   {
     logo: "https://flowgpt.com/flowgpt.png",
-    caption: "FlowGPT",
-    link: "https://flowgpt.com",
+    caption: "RoverX",
+    link: "https://roverx.io",
     description: flowDescription,
   },
   {
     logo: "https://www.circle.com/hubfs/Circle%20logo%202020/circle-icon.png",
-    caption: "Circle",
-    link: "https://circle.com",
+    caption: "Avalanche Computing Taiwan",
+    link: "https://www.avalanc.com",
     description: circleDescription,
   },
   {
     logo: "https://www.augury.com/wp-content/uploads/2023/05/Augury-Logo-for-Author-page.png",
-    caption: "Augury",
-    link: "https://augury.com",
+    caption: "Evitado",
+    link: "https://evitado.io",
     description: auguryDescription,
   },
 ];

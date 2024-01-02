@@ -39,14 +39,14 @@ export default function About() {
 
   const classes = [
     {
-      name: "CS 61A",
-      description: "Structure and Interpretation of Computer Programs",
-      link: "https://cs61a.org/",
+      name: "EECS 16B",
+      description: "Designing Information Devices and Systems II",
+      link: "https://www.eecs16b.org/",
     },
     {
       name: "CS 61B",
       description: "Data Structures and Algorithms",
-      link: "https://inst.eecs.berkeley.edu/~cs61b/fa21/",
+      link: "https://fa22.datastructur.es/",
     },
     {
       name: "CS 61C",
@@ -59,14 +59,14 @@ export default function About() {
       link: "https://eecs70.org/",
     },
     {
-      name: "CS 170",
-      description: "Efficient Algorithms and Intractable Problems",
-      link: "https://cs170.org/",
+      name: "CS 194-177",
+      description: "Decentralized Finance",
+      link: "https://rdi.berkeley.edu/berkeley-defi/f23",
     },
     {
       name: "Data 100",
       description: "Principles of Data Science",
-      link: "https://ds100.org/su23/",
+      link: "https://ds100.org/fa23/",
     },
   ];
 
@@ -132,8 +132,7 @@ export default function About() {
           }}
         >
           <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300">
-            My name is Adrian Kwan and I&apos;m currently studying Computer
-            Science @{" "}
+            My name is Ethan Lam and I&apos;m currently studying IEOR and EECS @{" "}
             <Text as="em" className="highlight">
               UC Berkeley
             </Text>
@@ -148,7 +147,7 @@ export default function About() {
             .
           </Text>
           <Text fontSize={{ base: "xl", md: "2xl" }} fontWeight="300">
-            I&apos;m interested in LLMs, computer vision, zero knowledge proofs,
+            I&apos;m interested in LLMs, artificial intelligence, zero knowledge proofs,
             and decentralized finance.
           </Text>
         </div>
@@ -216,9 +215,9 @@ export default function About() {
             />
 
             <ClubCard
-              name="Students Association of Applied Statistics"
+              name="Institute of Industrial and Systems Engineers"
               description={saasDescription}
-              link="https://saas.berkeley.edu/"
+              link="https://iise.berkeley.edu/"
               logo="https://i.ibb.co/PmG450P/Screenshot-2023-06-27-at-11-56-54-AM.png"
               delay={200}
             />
