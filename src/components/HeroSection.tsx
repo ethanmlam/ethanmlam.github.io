@@ -31,7 +31,7 @@ export default function HeroSection() {
   const scrollLinkStyles = {
     cursor: "pointer",
   };
-  const headingSize = useBreakpointValue({ base: "100%", md: "md" });
+  const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
   const imageSize = useBreakpointValue({ base: "150px", md: "300px" });
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function HeroSection() {
 
   return (
   <Box className="relative h-[60vh] bg-white sm:h-[38vh] lg:h-[83vh]">
-    <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-6 lg:px-8">
+    <Box className="relative isolate flex flex-row items-start justify-center px-6 pt-6 lg:px-8">
       <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40">
         <Stack
           direction={{ base: "column", md: "row" }}
