@@ -50,7 +50,7 @@ export default function HeroSection() {
   return (
   <Box className="relative h-[60vh] bg-white sm:h-[38vh] lg:h-[83vh]">
     <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-6 lg:px-8">
-      <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40" display="flex" flexDirection="column">
+      <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40">
         <Stack
           direction={{ base: "column", md: "row" }}
           spacing={{ base: 5, md: 20 }}
@@ -76,11 +76,11 @@ export default function HeroSection() {
             and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
           </Heading>
           {/* Additional text content and buttons can be added here */}
-        </Box>
-      </Stack>
+          </Box>
+        </Stack>
+      </Box>
     </Box>
   </Box>
-</Box>
 
   );
 }
