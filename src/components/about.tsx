@@ -18,9 +18,9 @@ import ClubCard from "./clubcard";
 import CompaniesSection from "./companiesSection";
 
 export default function About() {
-  useEffect(() => {
-    AOS.init({ duration: 800 });
-  }, []);
+  // useEffect(() => {
+  //   AOS.init({ duration: 800 });
+  // }, []);
 
   const { isOpen, onOpen, onClose } = useDisclosure();
 
@@ -80,7 +80,7 @@ export default function About() {
 
   return (
     <Box>
-      <Wave mask="url(#mask)" fill="url(#gradient)">
+      {/* <Wave mask="url(#mask)" fill="url(#gradient)">
         <defs>
           <linearGradient id="gradient" gradientTransform="rotate(90)">
             <stop offset="0" stopColor="rgba(255, 255, 255, 1)" />
@@ -92,7 +92,7 @@ export default function About() {
             <rect x="0" y="0" width="2000" height="200" fill="url(#gradient)" />
           </mask>
         </defs>
-      </Wave>
+      </Wave> */}
       <Box
         display="flex"
         alignItems="center"
