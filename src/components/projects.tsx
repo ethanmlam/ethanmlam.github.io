@@ -100,7 +100,7 @@ export default function Projects() {
       marginTop="10vh"
     >
       <VStack spacing="20px" align="center">
-        <Heading
+        {/* <Heading
           size="lg"
           color="transparent"
           bgGradient="linear-gradient(to right, rgba(29, 211, 189, 0.5), rgba(62, 100, 255, 0.5))"
@@ -109,7 +109,7 @@ export default function Projects() {
           fontWeight="700"
         >
           Projects
-        </Heading>
+        </Heading> */}
 
         <SimpleGrid columns={{ base: 1, lg: 3 }} spacing="20px">
           {projects.map((project, index) => (

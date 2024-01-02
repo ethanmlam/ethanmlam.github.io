@@ -76,8 +76,10 @@ export default function HeroSection() {
           >
             {/* Text content */}
             <Box flex="1" pr={{ base: 0, md: 100 }}>
-              <Heading fontWeight="700" fontSize={headingSize}>
-                Welcome to my website!
+              <Heading fontWeight="100" fontSize={headingSize}>
+                Hi there! My name is Ethan. I’m a 3rd year at University of California, Berkeley studying Electrical Engineering & Computer Science and Industrial Engineering & Operations Research. My academic interests are in LLMs, machine learning, zero knowledge proofs,
+            and decentralized finance.
+          </Text>  I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
               </Heading>
               <p
                 className={`mt-6 text-lg leading-8 text-black ${

@@ -93,7 +93,7 @@ export default function About() {
           </mask>
         </defs>
       </Wave> */}
-      <Box
+      {/* <Box
         display="flex"
         alignItems="center"
         justifyContent="center"
@@ -111,7 +111,7 @@ export default function About() {
         >
           About
         </Heading>
-      </Box>
+      </Box> */}
       <Box
         display="flex"
         flexDirection="column"
@@ -124,7 +124,7 @@ export default function About() {
         marginLeft="auto"
         marginRight="auto"
       >
-        <div
+        {/* <div
           style={{
             textAlign: "center",
             marginBottom: "20px",
@@ -150,7 +150,7 @@ export default function About() {
             I&apos;m interested in LLMs, artificial intelligence, zero knowledge proofs,
             and decentralized finance.
           </Text>
-        </div>
+        </div> */}
 
         <Box textAlign="center" marginTop="25px" marginBottom="15vh">
           <motion.button
