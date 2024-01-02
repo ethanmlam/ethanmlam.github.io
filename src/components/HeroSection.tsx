@@ -31,7 +31,7 @@ export default function HeroSection() {
   const scrollLinkStyles = {
     cursor: "pointer",
   };
-  const headingSize = useBreakpointValue({ base: "100%", md: "xs" });
+  const headingSize = useBreakpointValue({ base: "100%", md: "md" });
   const imageSize = useBreakpointValue({ base: "150px", md: "300px" });
 
   useEffect(() => {
