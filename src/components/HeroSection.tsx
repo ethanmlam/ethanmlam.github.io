@@ -48,107 +48,39 @@ export default function HeroSection() {
   }, []);
 
   return (
-    <Box className="relative h-[60vh]  bg-white sm:h-[38vh] lg:h-[83vh]">
-      <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-6 lg:px-8">
-        {/* Background Shape
-        <div
-          className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-60"
-          aria-hidden="true"
+  <Box className="relative h-[60vh] bg-white sm:h-[38vh] lg:h-[83vh]">
+    <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-6 lg:px-8">
+      <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40" display="flex" flexDirection="column">
+        <Stack
+          direction={{ base: "column", md: "row" }}
+          spacing={{ base: 5, md: 20 }}
+          align={{ base: "center", md: "start" }}
+          justify={{ md: "space-between" }} // Add this line
+          data-aos="fade-up"
         >
-          <div
-            className="relative left-[calc(50%-16rem)] aspect-[1155/678] w-[48.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#1dd3bd] to-[#3e64ff] opacity-30 sm:left-[calc(50%-40rem)] sm:w-[96.1875rem]"
-            style={{
-              zIndex: "-9999",
-              clipPath:
-                "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
-            }}
-          />
-        </div> */}
+          {/* Image */}
+          <Box flex="1" data-aos="fade-up">
+            <Image
+              src="https://i.ibb.co/6bYBGDq/IMG-1048-copy.png"
+              alt="Headshot"
+              w={imageSize}
+              h={imageSize}
+              className="rounded-md"
+            />
+          </Box>
 
-        {/* Content */}
-        <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40" display="flex" flexDirection="column">
-          <Stack
-            direction={{ base: "column", md: "row" }}
-            spacing={{ base: 5, md: 20 }}
-            align={{ base: "center", md: "start" }}
-            justify={{ md: "space-between" }} // Add this line
-            data-aos="fade-up"
-          >
-            {/* Text content */}
-            <Box flex="1" pr={{ base: 0, md: 100 }}>
-              <Heading fontWeight="20" fontSize={headingSize}>
+          {/* Text content */}
+          <Box flex="1" pr={{ base: 0, md: 100 }}>
+            <Heading fontWeight="20" fontSize={headingSize}>
               Hi there! My name is Ethan. I’m a 3rd year at University of California, Berkeley studying Electrical Engineering & Computer Science and Industrial Engineering & Operations Research. My academic interests are in LLMs, machine learning, zero knowledge proofs,
             and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
-              </Heading>
-              {/* <p
-                className={`mt-6 text-lg leading-8 text-black ${
-                  fade ? "fade-out" : "fade-in"
-                }`}
-              >
-                {bulletPoints[currentIndex]}
-              </p>
-               <Box mt={10} data-aos="fade-up">
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <ScrollLink
-                    to="about-section"
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-50}
-                    style={scrollLinkStyles}
-                    className="rounded-md border border-indigo-600 bg-indigo-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    About
-                  </ScrollLink>
-                </motion.button>
-
-                <motion.button
-                  whileHover={{ scale: 1.1 }}
-                  whileTap={{ scale: 0.9 }}
-                >
-                  <ScrollLink
-                    to="projects-section" // Adjust the target section ID accordingly
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    offset={-50}
-                    style={scrollLinkStyles}
-                    className="border: none ml-3 rounded-md border border-indigo-600 bg-white px-3.5 py-2.5 text-sm font-semibold text-indigo-600 shadow-sm hover:bg-indigo-600 hover:text-white focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-                  >
-                    Projects
-                  </ScrollLink>
-                </motion.button>
-              </Box>*/}
-            </Box>  
-
-            {/* Image */}
-            <Box flex="1" data-aos="fade-up">
-              <Image
-                src="https://i.ibb.co/6bYBGDq/IMG-1048-copy.png"
-                alt="Headshot"
-                w={imageSize}
-                h={imageSize}
-                className="rounded-md"
-              />
-            </Box>
-          </Stack>
+          </Heading>
+          {/* Additional text content and buttons can be added here */}
         </Box>
-      </Box>
-
-      {/* <style jsx>{`
-        .fade-in {
-          opacity: 1;
-          transition: opacity 0.5s ease-in-out;
-        }
-
-        .fade-out {
-          opacity: 0;
-          transition: opacity 0.5s ease-in-out;
-        }
-      `}</style> */}
+      </Stack>
     </Box>
+  </Box>
+</Box>
+
   );
 }
