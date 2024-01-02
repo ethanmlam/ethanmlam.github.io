@@ -66,7 +66,7 @@ export default function HeroSection() {
         </div> */}
 
         {/* Content */}
-        <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40">
+        <Box className="ml-auto max-w-7xl items-start py-8 sm:py-32 lg:py-40" display="flex" flexDirection="column">
           <Stack
             direction={{ base: "column", md: "row" }}
             spacing={{ base: 5, md: 20 }}
