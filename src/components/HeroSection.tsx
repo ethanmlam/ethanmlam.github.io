@@ -31,7 +31,7 @@ export default function HeroSection() {
   const scrollLinkStyles = {
     cursor: "pointer",
   };
-  const headingSize = useBreakpointValue({ base: "100%", md: "sm" });
+  const headingSize = useBreakpointValue({ base: "100%", md: "xxs" });
   const imageSize = useBreakpointValue({ base: "150px", md: "300px" });
 
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function HeroSection() {
 
   return (
     <Box className="relative h-[60vh]  bg-white sm:h-[38vh] lg:h-[83vh]">
-      <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-14 lg:px-8">
+      <Box className="relative isolate flex flex-col items-start justify-center px-6 pt-8 lg:px-8">
         {/* Background Shape
         <div
           className="absolute inset-x-0 -top-20 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-60"
@@ -80,14 +80,14 @@ export default function HeroSection() {
               Hi there! My name is Ethan. I’m a 3rd year at University of California, Berkeley studying Electrical Engineering & Computer Science and Industrial Engineering & Operations Research. My academic interests are in LLMs, machine learning, zero knowledge proofs,
             and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
               </Heading>
-              <p
+              {/* <p
                 className={`mt-6 text-lg leading-8 text-black ${
                   fade ? "fade-out" : "fade-in"
                 }`}
               >
                 {bulletPoints[currentIndex]}
               </p>
-              <Box mt={10} data-aos="fade-up">
+               <Box mt={10} data-aos="fade-up">
                 <motion.button
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.9 }}
@@ -121,8 +121,8 @@ export default function HeroSection() {
                     Projects
                   </ScrollLink>
                 </motion.button>
-              </Box>
-            </Box>
+              </Box>*/}
+            </Box>  
 
             {/* Image */}
             <Box flex="1" data-aos="fade-up">

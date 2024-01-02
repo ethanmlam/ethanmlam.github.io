@@ -15,7 +15,7 @@ const Header: React.FC = () => {
         >
           <Box flex="1" textAlign="left" zIndex="99">
             <Link href="/" _hover={{ textDecoration: "none" }}>
-              <h1 style={headingStyle}>Adrian Kwan</h1>
+              <h1 style={headingStyle}>Ethan Lam</h1>
             </Link>
           </Box>
           <HStack spacing={4} zIndex="99">
