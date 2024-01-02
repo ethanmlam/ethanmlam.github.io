@@ -32,7 +32,7 @@ export default function HeroSection() {
     cursor: "pointer",
   };
   const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
-  const imageSize = useBreakpointValue({ base: "150px", md: "100px" });
+  const imageSize = useBreakpointValue({ base: "10px", md: "10px" });
 
   useEffect(() => {
     const interval = setInterval(() => {
