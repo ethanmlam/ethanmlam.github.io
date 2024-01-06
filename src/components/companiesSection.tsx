@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Grid } from "@chakra-ui/react";
+import { Box, Heading, Grid, HStack} from "@chakra-ui/react";
 import ClubCard from "./clubcard"; // Make sure to import ClubCard component
 
 const zbDescription = [
@@ -60,7 +60,7 @@ const CompaniesSection = () => {
         fontWeight="100"
         marginBottom={{ base: "20px", md: "40px" }}
       >
-        Previous Work
+        Experiences
       </Heading>
       <Box
         display="flex"
@@ -71,17 +71,7 @@ const CompaniesSection = () => {
         marginTop="40px"
         width="100%" // Ensure it takes full width
       >
-        <Grid
-          templateColumns={{ base: "repeat(1, 1fr)", lg: "repeat(2, 1fr)" }}
-          gap={8}
-          data-aos="fade-in"
-          alignItems="center" // Center items in the Grid
-          justifyContent="center" // Center items in the Grid
-          fontWeight="300"
-          maxWidth="800px" // Limit the width of the Grid on larger screens
-          width="100%" // Ensure Grid takes full width
-          marginX="auto" // Center the Grid horizontally
-        >
+        <HStack spacing='24px'>
           {companies.map((company, index) => (
             <ClubCard
               key={index}
@@ -92,7 +82,7 @@ const CompaniesSection = () => {
               delay={index * 50}
             />
           ))}
-        </Grid>
+        </HStack>
       </Box>
     </Box>
   );

@@ -32,8 +32,8 @@ export default function HeroSection() {
     cursor: "pointer",
   };
   const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
-  const largeheadingSize = useBreakpointValue({ base: "100%", md: "xxl" });
-  const imageSize = useBreakpointValue({ base: "50px", md: "50px" });
+  const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
+  const imageSize = useBreakpointValue({ base: "300px", md: "300px" });
 
   useEffect(() => {
     const interval = setInterval(() => {

@@ -176,8 +176,8 @@ export default function About() {
       </Box>
 
       <CompaniesSection />
-
-      <Box data-aos="zoom-in-left" marginTop={{ base: "5vh", md: "10vh" }}>
+      { /*Student Orgs below (deleted)*/  }
+      {/* <Box data-aos="zoom-in-left" marginTop={{ base: "5vh", md: "10vh" }}>
         <Heading
           size="lg"
           textAlign="center"
@@ -223,7 +223,7 @@ export default function About() {
             />
           </Stack>
         </Box>
-      </Box>
+      </Box> */}
 
       <Box data-aos="fade-up" marginTop="10vh">
         <Heading size="lg" textAlign="center" fontWeight="100">
