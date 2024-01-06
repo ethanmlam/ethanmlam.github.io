@@ -32,7 +32,7 @@ export default function HeroSection() {
     cursor: "pointer",
   };
   const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
-  const imageSize = useBreakpointValue({ base: "10px", md: "10px" });
+  const imageSize = useBreakpointValue({ base: "50px", md: "50px" });
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -66,16 +66,19 @@ export default function HeroSection() {
               w={imageSize}
               h={imageSize}
               className="rounded-md"
-            />
+            /> 
           </Box>
 
           {/* Text content */}
           <Box flex="1" pr={{ base: 0, md: 100 }}>
-            <Heading fontWeight="20" fontSize={headingSize}>
-              Hi there! My name is Ethan. I’m a 3rd year at University of California, Berkeley studying Electrical Engineering & Computer Science and Industrial Engineering & Operations Research. My academic interests are in LLMs, machine learning, zero knowledge proofs,
+            <Heading fontWeight="20" fontSize={headingSize + 100}>
+              Hi there! My name is Ethan Lam. 
+            </Heading>
+          {/* Additional text content and buttons can be added here */}
+          <Heading fontWeight="20" fontSize={headingSize}>
+              I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering & Operations Research (IEOR). My academic interests are in LLMs, machine learning, zero knowledge proofs,
             and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
           </Heading>
-          {/* Additional text content and buttons can be added here */}
           </Box>
         </Stack>
       </Box>
