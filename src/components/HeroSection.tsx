@@ -32,6 +32,7 @@ export default function HeroSection() {
     cursor: "pointer",
   };
   const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
+  const largeheadingSize = useBreakpointValue({ base: "100%", md: "xxl" });
   const imageSize = useBreakpointValue({ base: "50px", md: "50px" });
 
   useEffect(() => {
@@ -71,7 +72,7 @@ export default function HeroSection() {
 
           {/* Text content */}
           <Box flex="1" pr={{ base: 0, md: 100 }}>
-            <Heading fontWeight="20" fontSize={headingSize + 100}>
+            <Heading fontWeight="20" fontSize={largeheadingSize}>
               Hi there! My name is Ethan Lam. 
             </Heading>
           {/* Additional text content and buttons can be added here */}
