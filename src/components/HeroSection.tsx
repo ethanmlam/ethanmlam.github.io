@@ -75,10 +75,10 @@ export default function HeroSection() {
               Hi there! My name is Ethan Lam. 
             </Heading>
           {/* Additional text content and buttons can be added here */}
-          <Heading fontWeight="20" fontSize={headingSize}>
-              I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering & Operations Research (IEOR). My academic interests are in LLMs, machine learning, zero knowledge proofs,
-            and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
-          </Heading>
+            <Heading fontWeight="20" fontSize={headingSize}>
+                I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering & Operations Research (IEOR). My academic interests are in LLMs, machine learning, zero knowledge proofs,
+              and decentralized finance. I also like playing poker, watching Dodgers baseball or Rams football, working out, and listening to music.
+            </Heading>
           </Box>
         </Stack>
       </Box>
