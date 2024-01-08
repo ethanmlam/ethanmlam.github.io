@@ -9,9 +9,11 @@ import {
   Box,
 } from "@chakra-ui/react";
 import Header from "../components/header";
-import HeroSection from "../components/HeroSection";
+// import HeroSection from "../components/HeroSection";
 import React, { useState, useEffect } from "react";
 import About from "../components/about";
+import HeroSection from "../components/HeroSection";
+import CompaniesSection from "../components/companiesSection";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
 import "@fontsource/lato/100.css";
@@ -23,8 +25,8 @@ import Head from "next/head";
 
 const theme = extendTheme({
   fonts: {
-    heading: "'Space Grotesk', sans-serif",
-    body: "'Lato', sans-serif",
+    heading: "'Lora', serif",
+    body: "'Lato', serif",
   },
   components: {
     Text: {
@@ -50,8 +52,14 @@ export default function Home() {
   return (
     <ChakraProvider theme={theme}>
       <Head>
-        <title>Adrian Kwan</title>
+        <title>Ethan Lam</title>
       </Head>
+      {/* <style jsx global>{`
+        body {
+          margin: 0;          // Remove default margin
+          overflow-x: hidden;  // Prevent horizontal scrolling
+        }
+      `}</style> */}
       {isLoading ? (
         <Center height="100vh" flexDirection="column">
           <Heading
@@ -64,28 +72,41 @@ export default function Home() {
             bgClip="text"
             animation="gradient-animation 3s ease-in-out infinite alternate"
           >
-            Adrian Kwan
+            Ethan Lam
           </Heading>
           <Spinner color="purple.500" size="xl" />
         </Center>
       ) : (
-        <>
-          <Box maxWidth="100%" width="100%">
-            <Header />
-            <HeroSection />
-            <div id="about-section">
-              <About />
+        <Flex>
+          <Box>
+          {/* Left Sidebar */}
+            {/* <Header /> */}
+            <div id="hero-section">
+              <HeroSection />
             </div>
+          </Box>
+
+          <Box maxWidth="100%" width="100%" ml="350px">
+            {/* <Header /> */}
+            <div id="about-section">
+            </div>
+            <div id="comp-section">
+              <CompaniesSection />
+              <About />
+              
+              <CompaniesSection />
+            </div>
+           
             <Flex flexDirection="column" alignItems="center">
-              <Divider orientation="horizontal" width="80%" />
+              <Divider orientation="horizontal" width="90%" />
             </Flex>
             <div id="projects-section">
               <Projects />
             </div>
           </Box>
-          <Footer />
-        </>
+          </Flex>
       )}
+      <Footer />
     </ChakraProvider>
   );
 }

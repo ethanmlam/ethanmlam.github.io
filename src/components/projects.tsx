@@ -21,7 +21,7 @@ export default function Projects() {
     {
       title: "Zettablock's AI Assistant",
       description:
-        "A chatbot that allows users to use natural language to setup an API automatically with required blockchain data.",
+        "A chatbot that allows users to use natural language to setup an API automatically with required blockchain.",
       image: "https://i.ibb.co/RvRLCSz/zetta.png",
       technologies: ["Golang", "Gin", "AWS", "GPT API"],
       association: "Zettablock",
@@ -57,7 +57,7 @@ export default function Projects() {
     {
       title: "Gitlet",
       description:
-        "A git-like version control system, allowing users to create, add, commit, checkout, merge, and reset files in a local repository.",
+        "A git-like version control system, allowing users to create, add, commit, checkout, merge, and reset files in repo.",
       image:
         "https://cloudstudio.com.au/wp-content/uploads/2021/06/GitWorkflow-4.png",
       technologies: ["Java"],
@@ -100,7 +100,7 @@ export default function Projects() {
       marginTop="10vh"
     >
       <VStack spacing="20px" align="center">
-        {/* <Heading
+        <Heading
           size="lg"
           color="transparent"
           bgGradient="linear-gradient(to right, rgba(29, 211, 189, 0.5), rgba(62, 100, 255, 0.5))"
@@ -109,7 +109,7 @@ export default function Projects() {
           fontWeight="700"
         >
           Projects
-        </Heading> */}
+        </Heading>
 
         <SimpleGrid columns={{ base: 1, lg: 3 }} spacing="20px">
           {projects.map((project, index) => (

@@ -31,9 +31,9 @@ const ClubCard: React.FC<ClassCardProps> = ({
 }) => {
   //lowered by two
   const width = useBreakpointValue({
-    base: "70vw",
-    sm: "45vh",
-    md: "35vh",
+    base: "65vw",
+    sm: "40vh",
+    md: "30vh",
   });
 
   const imageSize = useBreakpointValue({

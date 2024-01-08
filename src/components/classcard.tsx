@@ -22,7 +22,7 @@ const ClassCard: React.FC<ClassCardProps> = ({ name, description, link }) => {
           borderRadius="md"
           p="4"
           mb="4"
-          width="35vh"
+          width="25vh"
           minHeight="150px"
           maxHeight="fit-content"
           height="fit-content"

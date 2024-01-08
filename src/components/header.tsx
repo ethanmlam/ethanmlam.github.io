@@ -10,7 +10,7 @@ const Header: React.FC = () => {
         <HStack
           justifyContent="space-between"
           width="100%"
-          paddingX={8}
+          // paddingX={8}
           zIndex={999}
         >
           <Box flex="1" textAlign="left" zIndex="99">

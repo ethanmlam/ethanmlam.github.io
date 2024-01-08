@@ -54,7 +54,7 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
   return (
     <Modal isOpen={isOpen} onClose={onClose} size="2xl">
       <ModalOverlay />
-      <ModalContent maxHeight="85vh" overflowY="auto">
+      <ModalContent maxHeight="75vh" overflowY="auto">
         <ModalHeader textAlign="center" fontWeight="400">
           Project Display
         </ModalHeader>
