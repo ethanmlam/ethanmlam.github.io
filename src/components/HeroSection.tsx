@@ -149,7 +149,7 @@ export default function HeroSection() {
 
         {/* Image */}
         <Image
-          src="https://i.ibb.co/6bYBGDq/IMG-1048-copy.png"
+          src="https://i.ibb.co/K0QYdgR/5-D075-D4-A-BE43-4162-B564-D64-C79-A16-C52-1-201-a.jpg"
           alt="Headshot"
           w={imageSize}
           h={imageSize}
@@ -209,7 +209,7 @@ export default function HeroSection() {
                 "linear-gradient(to right, rgba(29, 211, 189, 0.3), rgba(62, 100, 255, 0.3))",
               display: "flex",
               borderRadius: "25px",
-              padding: "0px 20px",
+              padding: "10px 10px",
               justifyContent: "center",
               minWidth: "150px", // Added minimum width to prevent button from shrinking too much
             }}

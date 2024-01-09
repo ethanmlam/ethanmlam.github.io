@@ -96,8 +96,8 @@ export default function Home() {
           <Box maxWidth="100%" width="100%" ml="350px">
             {/* <Header /> */}
             <div id="about-section">
-            <About />
-            <CompaniesSection />
+            {/* <About />
+            <CompaniesSection /> */}
             </div>
             <div id="comp-section">
               
@@ -111,11 +111,11 @@ export default function Home() {
             </Flex>
             <div id="projects-section">
               <Projects />
+              <Footer/>
             </div>
           </Box>
           </Flex>
       )}
-      <Footer />
     </ChakraProvider>
   );
 }

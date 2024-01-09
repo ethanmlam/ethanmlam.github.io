@@ -19,98 +19,101 @@ export default function Projects() {
 
   const projects = [
     {
-      title: "Zettablock's AI Assistant",
+      title: "Utopic.ai's NFT Program",
       description:
-        "A chatbot that allows users to use natural language to setup an API automatically with required blockchain.",
+        "Smart contract and website integration allowing users to mint exclusive NFTs",
       image: "https://i.ibb.co/RvRLCSz/zetta.png",
-      technologies: ["Golang", "Gin", "AWS", "GPT API"],
-      association: "Zettablock",
+      technologies: ["Solidity", "React", "TypeScript", "GraphQL"],
+      association: "Utopic.ai",
       github: "",
       demo: "",
       longDescription:
-        "Zettablock’s AI Assistant is an advanced feature integrated within its product suite, empowering users to seamlessly create SQL queries through natural language inputs. By employing GPT's 3.5 Turbo 16K model, the AI Assistant streamlines API setup, with a demonstrated 35% reduction in error rates and a remarkable 70% reduction in users’ API setup times. As part of the implementation, the AI Assistant utilizes a specially curated Text-to-SQL dataset comprising 20,000 inputs and GPT outputs from users and research papers, which facilitates efficient training. Additionally, Zettablock's AI Assistant is equipped with a customized test framework and evaluation metric, capable of testing among 10+ large language models (LLMs), which has proven to be a game-changer by reducing development time by 100%.",
+        "sample",
     },
     {
-      title: "B@BPoll",
+      title: "Future Fund",
       description:
-        "A zero-knowledge anonymous voting protocol deployed on polygon, using Semaphore's zkSNARKs library.",
+        "An autonomous, decentralized, college-tuition funding platform",
       image: "https://i.ibb.co/XYVmHDz/babpoll.png",
-      technologies: ["React", "Solidity", "TypeScript", "Chakra"],
-      association: "Blockchain at Berkeley",
+      technologies: ["Solidity", "Python", "Firebase", "FastAPI"],
+      association: "Decentralized Finance",
       github: "https://github.com/adriankwann/babpollfront",
       demo: "https://www.youtube.com/embed/Wcbaz2JtV-0&t=3s",
       longDescription:
-        "B@BPoll, developed from February to May 2023, is an innovative voting platform that leverages Solidity, React, and JavaScript to ensure anonymous and secure voting in elections. By incorporating Semaphore's Zero-Knowledge Proof (ZKP) circuits, the platform establishes a new standard for voting privacy and security. B@BPoll’s voting contracts were meticulously crafted from the ground up and deployed on the Polygon network, with seamless integration with a custom-built React frontend through ABI connections. This project successfully enabled over 100 club members to participate in club elections, resulting in a 95% user satisfaction rate and a 25% increase in participation.",
+        "Future Fund, developed from Sept to Nov 2023, is an innovative college-tuition crowdfunding platform that leverages Solidity, React, and JavaScript to ensure accessible, transparent, cheap, and quick tuition fundraising. By incorporating a unique 'verifier' system (the college), the platform establishes a new standard for control and security.",
     },
     {
-      title: "dBridge",
+      title: "CPU",
       description:
-        "Allows users to find the best conversion rates and trading strategies between two tokens of their choice.",
+        "Virtual CPU utilizing C and Logisim, executing RISC-V commands",
       image: "https://i.ibb.co/cxDvqZw/Screenshot-2023-04-24-at-3-30-59-PM.png",
-      technologies: ["React", "Solidity", "JavaScript"],
+      technologies: ["C", "Logisim"],
       association: "",
       github: "https://github.com/adriankwann/dexapp",
       demo: "https://gifyu.com/image/SQj2R",
       longDescription:
-        "dBridge is a cutting-edge DeFi exchange aggregator developed between March 2023 to present. It is engineered using React and JavaScript and efficiently calculates optimal trading rates and strategies for over 20 tokens across more than 15 exchanges. With a focus on user experience, the frontend is designed to be responsive and intuitive, featuring custom animations that have earned it a 90% user satisfaction rate. Moreover, dBridge ensures peak performance even under high traffic by employing caching and optimization strategies that have achieved a remarkable 25% increase in load times.",
+        "Implemented advanced features, such as SIMD pipelining, to speed up the CPU's processing efficiency by 200%",
     },
     {
-      title: "Gitlet",
+      title: "SIXT33N",
       description:
-        "A git-like version control system, allowing users to create, add, commit, checkout, merge, and reset files in repo.",
+        "Voice-controlled car with microcontroller, circuits, and PCBs",
       image:
         "https://cloudstudio.com.au/wp-content/uploads/2021/06/GitWorkflow-4.png",
-      technologies: ["Java"],
+      technologies: ["C++"],
       association: "",
       github: "https://github.com/adriankwann/61b/tree/main/gitlet",
       demo: "",
       longDescription:
-        "Gitlet is a robust version control system akin to Git, developed in Java between April and May 2022. The system allows users to stage and commit files, merge changes, and restore and revert states, providing comprehensive control over file versions. Gitlet employs sophisticated data structures and SHA-1 hashing to enable efficient serialization and a tree-like file structure. It also features capabilities like maintaining chronological sequences of commits, initializing a Git workspace, and generating file log history, making it a powerful tool for managing project development.",
+        " Developed in Java between April and May 2022, the voice controlled car required closed-loop control logic, audio signal amplification and denoising circuits to recognize 4 voice commands to move in the 4 different directions.",
     },
     {
-      title: "SAAS Website",
+      title: "Fortress",
       description:
-        "Built the SAAS website. This website serves as a landing page for clients and prospective applicants.",
+        "Mood-based Song Recommendation Engine",
       image: "https://i.ibb.co/px90hRH/saas.png",
-      technologies: ["React", "Django", "Chakra"],
-      association: "Students Association of Applied Statistics",
-      github: "https://github.com/SUSA-org/usa-website",
+      technologies: ["React", "Flask"],
+      association: "CalHacks 2022",
+      github: "https://github.com/ethan-m-lam/CalHacks_fortress",
       demo: "",
-      longDescription: "",
+      longDescription: "Website built on React and Flask. User drags a slider to select a mood ranging from happy to sad, and receives a list of song recommendations that fit that mood",
     },
     {
-      title: "FlowGPT Collection Feature",
+      title: "Flower World",
       description:
-        "Designed and implemented the collection feature for FlowGPT. Similar to spotify playlists for prompts.",
+        "Rogue-Like Flower-Collecting RPG Game",
       image: "https://i.ibb.co/7VGkZXk/Screenshot-2023-06-28-at-3-38-15-PM.png",
-      technologies: ["Prisma", "React", "Next", "Supabase", "tRPC"],
-      association: "FlowGPT",
+      technologies: ["Java"],
+      association: "",
       github: "",
       demo: "",
-      longDescription: "",
+      longDescription: "Designed a rogue-like RPG based on a user traversing a randomly generated world and collecting as many flowers as possible within the time constraint.",
     },
   ];
 
   return (
+    <Box>
+    <Heading
+          size="lg"
+          marginTop="30px"
+          marginLeft="30px"
+          textAlign="left"
+          // color="transparent"
+          // bgGradient="linear-gradient(to right, rgba(29, 211, 189, 0.5), rgba(62, 100, 255, 0.5))"
+          // bgClip="text"
+          data-aos="fade-up"
+          fontWeight="400"
+        >
+          Projects
+    </Heading>
     <Box
       display="flex"
       alignItems="flex-start" // Align items to the top
       justifyContent="center"
       height="auto"
-      marginTop="10vh"
+      marginTop="5vh"
     >
       <VStack spacing="20px" align="center">
-        <Heading
-          size="lg"
-          color="transparent"
-          bgGradient="linear-gradient(to right, rgba(29, 211, 189, 0.5), rgba(62, 100, 255, 0.5))"
-          bgClip="text"
-          data-aos="fade-up"
-          fontWeight="700"
-        >
-          Projects
-        </Heading>
-
         <SimpleGrid columns={{ base: 1, lg: 3 }} spacing="20px">
           {projects.map((project, index) => (
             <ProjectCard
@@ -129,6 +132,7 @@ export default function Projects() {
           ))}
         </SimpleGrid>
       </VStack>
+    </Box>
     </Box>
   );
 }

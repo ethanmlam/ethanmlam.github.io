@@ -39,7 +39,7 @@ const ClubCard: React.FC<ClassCardProps> = ({
   const imageSize = useBreakpointValue({
     base: "2em",
     sm: "2.5em",
-    md: "3em",
+    md: "3.5em",
   });
 
   const headingSize = useBreakpointValue({
