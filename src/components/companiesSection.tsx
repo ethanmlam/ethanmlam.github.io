@@ -2,13 +2,13 @@ import React from "react";
 import { Box, Heading, Grid, HStack } from "@chakra-ui/react";
 import ClubCard from "./clubcard"; // Make sure to import ClubCard component
 
-const zbDescription = [
+const flowDescription = [
   "A NFT notification and blockchain analytics app",
   "Su23: Product Management Intern",
   "Project: Case study on Payments",
 ];
 
-const flowDescription = [
+const zbDescription = [
   "An use-to-earn social media platform",
   "Su23: Software Engineering Intern",
   "Project: One-Click NFT Minting on Website",
@@ -69,8 +69,8 @@ const CompaniesSection = () => {
         alignItems="center" // Ensure the items are centered
         justifyContent="center"
         marginBottom="25px"
-        marginTop="30px"
-        // width="100%" // Ensure it takes full width
+        marginTop="10px"
+        width="100%" // Ensure it takes full width
       >
         <HStack spacing='24px'>
           {companies.map((company, index) => (
@@ -80,7 +80,7 @@ const CompaniesSection = () => {
               description={company.description}
               link={company.link}
               logo={company.logo}
-              delay={index * 50}
+              delay={index*50}
             />
           ))}
         </HStack>

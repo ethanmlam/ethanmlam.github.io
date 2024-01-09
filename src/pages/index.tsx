@@ -16,17 +16,24 @@ import HeroSection from "../components/HeroSection";
 import CompaniesSection from "../components/companiesSection";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
-import "@fontsource/lato/100.css";
+// import "@fontsource/lato/100.css";
 import "@fontsource/lato/300.css";
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
+import "@fontsource/roboto/400.css";
+import "@fontsource/open-sans/400.css";
+import "@fontsource/montserrat/400.css";
+import "@fontsource/open-sans/400.css";
+import "@fontsource/montserrat/400.css";
 import "@fontsource-variable/space-grotesk";
 import Head from "next/head";
 
 const theme = extendTheme({
   fonts: {
-    heading: "'Lora', serif",
-    body: "'Lato', serif",
+    heading: "'Montserrat', san-serif",
+    heading2: "'Lato', serif",
+    heading3: "'Lato', serif",
+    body: "'Lato', san-serif",
   },
   components: {
     Text: {
@@ -89,12 +96,14 @@ export default function Home() {
           <Box maxWidth="100%" width="100%" ml="350px">
             {/* <Header /> */}
             <div id="about-section">
+            <About />
+            <CompaniesSection />
             </div>
             <div id="comp-section">
-              <CompaniesSection />
-              <About />
               
-              <CompaniesSection />
+            <About />
+            <CompaniesSection />
+           
             </div>
            
             <Flex flexDirection="column" alignItems="center">

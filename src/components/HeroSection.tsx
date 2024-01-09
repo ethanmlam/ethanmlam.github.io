@@ -209,7 +209,7 @@ export default function HeroSection() {
                 "linear-gradient(to right, rgba(29, 211, 189, 0.3), rgba(62, 100, 255, 0.3))",
               display: "flex",
               borderRadius: "25px",
-              padding: "10px 20px",
+              padding: "0px 20px",
               justifyContent: "center",
               minWidth: "150px", // Added minimum width to prevent button from shrinking too much
             }}

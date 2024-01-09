@@ -45,7 +45,7 @@ export default function About() {
   };
   
   const headingStyle = {
-    fontFamily: "Roboto, sans-serif",
+    fontFamily: "Montserrat, sans-serif",
     fontWeight: 300,
     fontSize: "1.5rem",
   };
@@ -191,7 +191,7 @@ export default function About() {
       //     </Box>
       //   </VStack>
 
-    <Box flex="1"  marginLeft="30px" marginTop="50px" marginBottom="50px">
+    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="50px">
       {/* Your main content goes here */}
       <Box height="px" />
       
@@ -211,10 +211,10 @@ export default function About() {
             Hi there! My name is Ethan Lam. 
           </Heading>
         {/* Additional text content and buttons can be added here */}
-          <Heading fontWeight="20" fontSize={headingSize}>
+          <Text fontWeight="20" fontSize={headingSize}>
               I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering & Operations Research (IEOR). My academic interests are in LLMs, machine learning, zero knowledge proofs,
             and decentralized finance. I also enjoy playing poker, watching Dodgers baseball, working out, and listening to music.
-          </Heading>
+          </Text>
         </Box>
       </Stack>
       
