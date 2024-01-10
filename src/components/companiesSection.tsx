@@ -3,25 +3,25 @@ import { Box, Heading, Grid, HStack } from "@chakra-ui/react";
 import ClubCard from "./clubcard"; // Make sure to import ClubCard component
 
 const utopicDescription = [
-  "An use-to-earn social media platform",
+  "Use-To-Earn Blockchain Social Media Platform",
   "Su23: Software Engineering Intern",
   "Website and NFT Program",
 ];
 
 const roverxDescription = [
-  "A NFT Analytics App",
+  "NFT Trading Analytics App",
   "Su23: Product Management Intern",
   "Payments Case-Study",
   
 ];
 
 const avalancheDescription = [
-  "SAAS ML Training Tool",
+  "LLM Training Optimization",
   "Su22: Product Management Intern",
 ];
 
 const evitadoDescription = [
-  "Autonomous Collision Sensing Tech for Aviation",
+  "AI Collision Sensing Tech for Aircraft",
   "Su22: Operations Research Intern",
 ];
 const companies = [

@@ -206,14 +206,13 @@ export default function About() {
         
 
         {/* Text content */}
-        <Box flex="1" pr={{ base: 0, md: 100 }}>
+        <Box flex="1" pr={{ base: 0, md: 140 }}>
           <Heading fontWeight="20" fontSize={largeheadingSize}>
             Hi there! My name is Ethan Lam. 
           </Heading>
         {/* Additional text content and buttons can be added here */}
           <Text fontWeight="20" fontSize={headingSize}>
-              I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering & Operations Research (IEOR). My academic interests are in LLMs, machine learning, zero knowledge proofs,
-            and decentralized finance. I also enjoy playing poker, watching Dodgers baseball, working out, and listening to music.
+              I’m a 3rd year at University of California, Berkeley studying EECS and Industrial Engineering and Operations Research (IEOR). I'm interested in decentralized finance, generative AI, and emerging tech entrepreneurship. I enjoy playing poker, watching Dodgers baseball, working out, and mobbing to music festivals.
           </Text>
         </Box>
       </Stack>
