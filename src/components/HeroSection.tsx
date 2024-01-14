@@ -199,8 +199,11 @@ export default function HeroSection() {
         marginLeft="auto"
         marginRight="auto"
       >
+        <Heading fontWeight="2" fontSize={headingSize} >
+        ethanmlam@berkeley.edu
+        </Heading>
 
-        <Box textAlign="center" marginTop="25px" marginBottom="15vh">
+        {/* <Box textAlign="center" marginTop="25px" marginBottom="15vh">
           <motion.button
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -221,7 +224,7 @@ export default function HeroSection() {
             </Text>
           </motion.button>
         </Box>
-        <ResumeModal isOpen={isOpen} onClose={onClose} />  
+        <ResumeModal isOpen={isOpen} onClose={onClose} />   */}
       </Box>
       </VStack>
 

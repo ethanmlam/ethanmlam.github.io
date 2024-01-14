@@ -9,7 +9,7 @@ const utopicDescription = [
 ];
 
 const roverxDescription = [
-  "NFT Trading Analytics App",
+  "NFT Trading and Blockchain Analytics App",
   "Su23: Product Management Intern",
   "Payments Case-Study",
   

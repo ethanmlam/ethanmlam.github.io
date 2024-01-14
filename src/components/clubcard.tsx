@@ -71,14 +71,16 @@ const ClubCard: React.FC<ClassCardProps> = ({
           data-aos-delay={delay}
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgba(29, 211, 189, 0.1), rgba(62, 100, 255, 0))",
+            "linear-gradient(to bottom, rgba(0, 192, 255, 0.1), rgba(0,0,0, 0))",
           }}
         >
           <Flex direction="column" align="center" justify="center">
             <Image
               src={logo}
               alt={`${name} logo`}
-              width={imageSize}
+              maxHeight="65px"
+              maxWidth="40vh"
+              // width={imageSize}
               mb="2"
               mt="1em"
             />

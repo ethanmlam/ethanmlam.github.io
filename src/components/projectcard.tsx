@@ -57,16 +57,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
           maxW="xs"
           data-aos="zoom-out"
           data-aos-delay={delay}
-          bgGradient="linear-gradient(to top, rgba(29, 211, 189, 0.1), rgba(62, 100, 255, 0))"
-        >
+          bgGradient="linear-gradient(to bottom, rgba(0, 192, 255, 0.1), rgba(62, 100, 255, 0))"
+      >
           <CardBody>
             <Stack mt="6" spacing="3" align="center" justifyContent="center">
               <Image
                 src={typeof image === "string" ? image : image.src}
                 alt="Project Image"
                 borderRadius="lg"
-                maxHeight="80px"
-                maxWidth="20vh"
+                maxHeight="90px"
+                maxWidth="30vh"
               />
               <Heading size="md" marginTop="15px" fontWeight="700">
                 {title}
@@ -106,7 +106,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                 fontWeight="500"
                 onClick={onOpen}
               >
-                Learn More
+                More Details
               </Button>
             </Stack>
           </CardBody>

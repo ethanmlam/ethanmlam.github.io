@@ -28,7 +28,18 @@ export default function Projects() {
       github: "",
       demo: "",
       longDescription:
-        "Crafted custom Ethereum smart-contracts for minting and deploying of exclusive NFTs and integrated with website Frontend + MetaMask using React, TypeScript and CSS preparing for NFT launch.",
+        "Distributed 100 NFTs to top content creators in a user-friendly process. Utilizing the Web3.js library, I crafted smart contracts for the minting and deployment of NFTs and seamlessly integrated with our React Frontend through ABI connections. Additionally, I coded the NFT Program website section on the RedwoodJS stack (React, TypeScript, Prisma and GraphQL).",
+    },
+    {
+      title: "Fortress",
+      description:
+        "Mood-based Song Recommendation Engine",
+      image: "https://i.ibb.co/nC6WQy2/Screen-Shot-2024-01-10-at-1-16-44-PM.png",
+      technologies: ["React", "Flask", "PyTorch"],
+      association: "CalHacks 2022",
+      github: "https://github.com/ethan-m-lam/CalHacks_fortress",
+      demo: "",
+      longDescription: "Fortress is a song recommendation platform leveraging React, Flask, and PyTorch for users to find popular songs with a desired mood. The model is trained using sentiment analysis on a 10,000 most-played song dataset. Each song is given a normalized score and stored on a Flask backend. The user simply drags a slider and receives a list of song recommendations that fit that mood. Fortress received an over 90% approval rating from a poll of fellow hackers at the CalHacks.",
     },
     {
       title: "Future Fund",
@@ -36,23 +47,11 @@ export default function Projects() {
         "Decentralized College Tuition Funding Platform",
       image: "https://i.ibb.co/Vjvd3Ly/Screen-Shot-2024-01-09-at-5-15-59-PM.png",
       technologies: ["Solidity", "Python", "Firebase", "FastAPI"],
-      association: "",
+      association: "Decentralized Finance",
       github: "https://github.com/ownssi/Defi-Fa2023",
       demo: "",
       longDescription:
-        "Worked with a team of 4 on the backend and smart contracts for the Future Fund. Developed from Sept to Nov 2023, Future Fund is an innovative college-tuition crowdfunding platform that leverages Solidity, React, and JavaScript to ensure accessible, transparent, cheap, and quick tuition fundraising. By incorporating a unique 'verifier' system (the college), the platform establishes a new standard for control and security.",
-    },
-    {
-      title: "8-bit CPU",
-      description:
-        "Virtual CPU utilizing C and Logisim with complete RISC-V command capability",
-      image: "https://i.ibb.co/cQqpNVW/Screen-Shot-2024-01-09-at-5-12-45-PM.png",
-      technologies: ["C", "Logisim"],
-      association: "",
-      github: "https://github.com/61c-student/sp23-proj3-aariyur",
-      demo: "https://gifyu.com/image/SQj2R",
-      longDescription:
-        "Implemented advanced features, such as SIMD pipelining, to speed up the CPU's processing efficiency by 200%",
+        "Future Fund is a full-stack college tuition crowdfunding platform leveraging Solidity smart contracts to ensure accountability for donors, students, and colleges. Project received VC funding interest.",
     },
     {
       title: "SIXT33N",
@@ -61,35 +60,38 @@ export default function Projects() {
         //fix the image and github 
       image:
         "https://cloudstudio.com.au/wp-content/uploads/2021/06/GitWorkflow-4.png",
-      technologies: ["C++"],
+      technologies: ["C++", "Arduino"],
       association: "",
-      github: "https://github.com/adriankwann/61b/tree/main/gitlet",
+      github: "",
       demo: "",
       longDescription:
-        "Developed in Java between April and May 2022, the voice controlled car required closed-loop control logic, audio signal amplification and denoising circuits to recognize 4 voice commands to move in the 4 different directions.",
+        "SIXT33N is a voice-controlled car capable of recognizing 4 distinct voice commands to move in all 4 directions. SIXT33N features ML techniques (PCA Classification) to reduce noise and perform spoken commands. Built from ground up using circuits and PCBs, SIXT33N also required closed-loop control logic, audio signal amplification, and denoising circuits.",
     },  
     {
-      title: "Fortress",
+      title: "32-bit CPU",
       description:
-        "Mood-based Song Recommendation Engine",
-      image: "https://i.ibb.co/LRd89qL/Screen-Shot-2024-01-09-at-5-11-58-PM.png",
-      technologies: ["React", "Flask", "PyTorch"],
-      association: "CalHacks 2022",
-      github: "https://github.com/ethan-m-lam/CalHacks_fortress",
+        "Virtual CPU on Logisim with complete RISC-V command capability",
+      image: "https://i.ibb.co/cQqpNVW/Screen-Shot-2024-01-09-at-5-12-45-PM.png",
+      technologies: ["C", "Logisim"],
+      association: "",
+      //fix the github
+      github: "https://github.com/61c-student/sp23-proj3-aariyur",
       demo: "",
-      longDescription: "Website built on React and Flask. Performed Sentiment Analysis on over 10,000 songs, plotting each on a coordinate axis and orthonormalizing to achieve recommendations. User drags a slider to select a mood ranging from happy to sad, and receives a list of song recommendations that fit that mood",
+      longDescription:
+        "32-bit CPU is a virtual CPU with RISC-V command capability. It contains advanced features, such as SIMD pipelining, to speed up the CPU's processing efficiency by 200%.",
     },
+    
     {
       //re screenshot without the keyboard sticking in
       title: "Flower World",
       description:
         "Rogue-Like Flower Collecting RPG Game with Levels",
       image: "https://i.ibb.co/zXbzjg1/Screen-Shot-2024-01-09-at-5-10-22-PM.png",
-      technologies: ["Java"],
+      technologies: ["Java", "JUnit"],
       association: "",
       github: "",
       demo: "",
-      longDescription: "Designed a rogue-like RPG based on a user traversing a randomly generated world and collecting as many flowers as possible within the time constraint.",
+      longDescription: "Flower World is a rogue-like RPG based on a user traversing a randomly generated world and collecting as many flowers as possible within the time constraint. It utilizes data structures like HashMaps and traversals like Breadth First Search to ensure a robust runtime.",
     },
   ];
 
