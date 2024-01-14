@@ -13,6 +13,7 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { StaticImageData } from "next/image";
+import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
@@ -50,81 +51,84 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
 
   return (
-    
       
-      <Box>
-        <Card
-          maxW="xs"
-          data-aos="zoom-out"
-          data-aos-delay={delay}
-          bgGradient="linear-gradient(to bottom, rgba(0, 192, 255, 0.1), rgba(62, 100, 255, 0))"
-      >
-          <CardBody>
-            <Stack mt="6" spacing="3" align="center" justifyContent="center">
-              <Image
-                src={typeof image === "string" ? image : image.src}
-                alt="Project Image"
-                borderRadius="lg"
-                maxHeight="90px"
-                maxWidth="30vh"
-              />
-              <Heading size="md" marginTop="15px" fontWeight="700">
-                {title}
-              </Heading>
-              <Text textAlign="center">{description}</Text>
-              <Box textAlign="center" className="15px">
-                <Text fontSize="sm" fontWeight="400" mb="2">
-                  Technologies/Languages:
-                </Text>
-                <Stack
-                  direction="row"
-                  flexWrap="wrap"
-                  spacing="2"
-                  justifyContent={
-                    technologies.length === 1 ? "center" : "flex-start"
-                  }
+        <Box>
+          <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Card
+            maxW="xs"
+            data-aos="zoom-out"
+            data-aos-delay={delay}
+            bgGradient="linear-gradient(to bottom, rgba(0, 192, 255, 0.1), rgba(62, 100, 255, 0))"
+        >
+            <CardBody>
+              <Stack mt="6" spacing="3" align="center" justifyContent="center">
+                <Image
+                  src={typeof image === "string" ? image : image.src}
+                  alt="Project Image"
+                  borderRadius="lg"
+                  maxHeight="90px"
+                  maxWidth="30vh"
+                />
+                <Heading size="md" marginTop="15px" fontWeight="700">
+                  {title}
+                </Heading>
+                <Text textAlign="center">{description}</Text>
+                <Box textAlign="center" className="15px">
+                  <Text fontSize="sm" fontWeight="400" mb="2">
+                    Technologies/Languages:
+                  </Text>
+                  <Stack
+                    direction="row"
+                    flexWrap="wrap"
+                    spacing="2"
+                    justifyContent={
+                      technologies.length === 1 ? "center" : "flex-start"
+                    }
+                  >
+                    {technologies.map((tech) => (
+                      <Box
+                        key={tech}
+                        border="1px solid gray"
+                        borderRadius="md"
+                        p="1"
+                        fontSize="sm"
+                        fontWeight="300"
+                      >
+                        {tech}
+                      </Box>
+                    ))}
+                  </Stack>
+                </Box>
+                <Button
+                  color="blue.600"
+                  fontSize="l"
+                  width="50%"
+                  marginTop="10px"
+                  fontWeight="500"
+                  onClick={onOpen}
                 >
-                  {technologies.map((tech) => (
-                    <Box
-                      key={tech}
-                      border="1px solid gray"
-                      borderRadius="md"
-                      p="1"
-                      fontSize="sm"
-                      fontWeight="300"
-                    >
-                      {tech}
-                    </Box>
-                  ))}
-                </Stack>
-              </Box>
-              <Button
-                color="blue.600"
-                fontSize="l"
-                width="50%"
-                marginTop="10px"
-                fontWeight="500"
-                onClick={onOpen}
-              >
-                More Details
-              </Button>
-            </Stack>
-          </CardBody>
-          <Divider />
-        </Card>
-        <ProjectModal
-          isOpen={isOpen}
-          onClose={onClose}
-          title={title}
-          description={description}
-          thumbnailURL={image}
-          technologies={technologies}
-          github={github}
-          association={association}
-          longDescription={longDescription}
-          demo={demo}
-        />
-      </Box>
+                  More Details
+                </Button>
+              </Stack>
+            </CardBody>
+            <Divider />
+          </Card>
+          
+          <ProjectModal
+            isOpen={isOpen}
+            onClose={onClose}
+            title={title}
+            description={description}
+            thumbnailURL={image}
+            technologies={technologies}
+            github={github}
+            association={association}
+            longDescription={longDescription}
+            demo={demo}
+          />
+          </motion.button>
+        </Box>
+      
   );
 };
 

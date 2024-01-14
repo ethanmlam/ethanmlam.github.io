@@ -45,7 +45,7 @@ export default function Projects() {
       title: "Future Fund",
       description:
         "Decentralized College Tuition Funding Platform",
-      image: "https://i.ibb.co/Vjvd3Ly/Screen-Shot-2024-01-09-at-5-15-59-PM.png",
+      image: "https://i.ibb.co/BBH2x23/Screen-Shot-2024-01-13-at-10-37-09-PM.png",
       technologies: ["Solidity", "Python", "Firebase", "FastAPI"],
       association: "Decentralized Finance",
       github: "https://github.com/ownssi/Defi-Fa2023",
@@ -57,9 +57,8 @@ export default function Projects() {
       title: "SIXT33N",
       description:
         "Voice-controlled car with Arduino microcontroller, circuits, and PCBs",
-        //fix the image and github 
       image:
-        "https://cloudstudio.com.au/wp-content/uploads/2021/06/GitWorkflow-4.png",
+        "https://i.ibb.co/JjRx4Gf/IMG-0503.jpg",
       technologies: ["C++", "Arduino"],
       association: "",
       github: "",
@@ -74,19 +73,17 @@ export default function Projects() {
       image: "https://i.ibb.co/cQqpNVW/Screen-Shot-2024-01-09-at-5-12-45-PM.png",
       technologies: ["C", "Logisim"],
       association: "",
-      //fix the github
-      github: "https://github.com/61c-student/sp23-proj3-aariyur",
+      github: "https://github.com/ethan-m-lam/cpu/",
       demo: "",
       longDescription:
         "32-bit CPU is a virtual CPU with RISC-V command capability. It contains advanced features, such as SIMD pipelining, to speed up the CPU's processing efficiency by 200%.",
     },
     
     {
-      //re screenshot without the keyboard sticking in
       title: "Flower World",
       description:
         "Rogue-Like Flower Collecting RPG Game with Levels",
-      image: "https://i.ibb.co/zXbzjg1/Screen-Shot-2024-01-09-at-5-10-22-PM.png",
+      image: "https://i.ibb.co/TRDsHNL/Screen-Shot-2024-01-13-at-10-29-40-PM.png",
       technologies: ["Java", "JUnit"],
       association: "",
       github: "",

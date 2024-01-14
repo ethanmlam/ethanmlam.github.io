@@ -8,11 +8,11 @@ import {
   Flex,
   Box,
 } from "@chakra-ui/react";
-import Header from "../components/header";
+// import Header from "../components/header";
 // import HeroSection from "../components/HeroSection";
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
 import About from "../components/about";
-import HeroSection from "../components/HeroSection";
+import LeftSidebar from "../components/leftsidebarEthan";
 import CompaniesSection from "../components/companiesSection";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
@@ -47,63 +47,27 @@ const theme = extendTheme({
   },
 });
 export default function Home() {
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Simulate a loading delay
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 1000); // Adjust the duration as needed
-  }, []);
-
   return (
     <ChakraProvider theme={theme}>
-      <Head>
-        <title>Ethan Lam</title>
-      </Head>
-      {/* <style jsx global>{`
-        body {
-          margin: 0;          // Remove default margin
-          overflow-x: hidden;  // Prevent horizontal scrolling
-        }
-      `}</style> */}
-      {isLoading ? (
-        <Center height="100vh" flexDirection="column">
-          <Heading
-            as="h1"
-            size="lg"
-            mb={4}
-            fontWeight="300"
-            color="transparent"
-            bgGradient="linear(to-r, purple.500, cyan.500)"
-            bgClip="text"
-            animation="gradient-animation 3s ease-in-out infinite alternate"
-          >
-            Ethan Lam
-          </Heading>
-          <Spinner color="purple.500" size="xl" />
-        </Center>
-      ) : (
         <Flex>
           <Box>
           {/* Left Sidebar */}
             {/* <Header /> */}
             <div id="hero-section">
-              <HeroSection />
+              <LeftSidebar />
             </div>
           </Box>
 
           <Box maxWidth="100%" width="100%" ml="350px">
             {/* <Header /> */}
             <div id="about-section">
-            {/* <About />
-            <CompaniesSection /> */}
+              <About />
+              <CompaniesSection />
             </div>
             <div id="comp-section">
               
-            <About />
-            <CompaniesSection />
-           
+              {/* <About />
+              <CompaniesSection /> */}
             </div>
            
             <Flex flexDirection="column" alignItems="center">
@@ -114,8 +78,7 @@ export default function Home() {
               <Footer/>
             </div>
           </Box>
-          </Flex>
-      )}
+        </Flex>
     </ChakraProvider>
   );
 }

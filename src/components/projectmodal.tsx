@@ -79,8 +79,8 @@ const ProjectModal: React.FC<ProjectModalProps> = ({
           {typeof thumbnailURL === "string" ? (
             <Box marginTop="20px">
               <Image src={thumbnailURL} alt="proj image" 
-              // maxHeight="300px"
-              // maxWidth="500vh"
+              maxHeight="275px"
+              maxWidth="100vh"
               />
               
             </Box>

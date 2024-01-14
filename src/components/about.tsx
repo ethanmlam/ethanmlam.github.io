@@ -15,14 +15,8 @@ import {
 } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ClassCard from "./classcard";
+// import ClassCard from "./classcard";
 import { motion } from "framer-motion";
-import ResumeModal from "./resumemodal";
-import Wave from "react-wavify";
-import ClubCard from "./clubcard";
-import CompaniesSection from "./companiesSection";
-import { FaGithub, FaTwitter, FaLinkedin } from "react-icons/fa";
-
 
 export default function About() {
   

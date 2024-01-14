@@ -22,7 +22,7 @@ type ClassCardProps = {
   delay: number;
 };
 
-const ClubCard: React.FC<ClassCardProps> = ({
+const CompanyCard: React.FC<ClassCardProps> = ({
   name,
   description,
   link,
@@ -108,4 +108,4 @@ const ClubCard: React.FC<ClassCardProps> = ({
   );
 };
 
-export default ClubCard;
+export default CompanyCard;

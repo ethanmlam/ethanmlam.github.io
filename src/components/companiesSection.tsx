@@ -1,28 +1,28 @@
 import React from "react";
 import { Box, Heading, Grid, HStack } from "@chakra-ui/react";
-import ClubCard from "./clubcard"; // Make sure to import ClubCard component
+import CompanyCard from "./companyCard"; // Make sure to import CompanyCard component
 
 const utopicDescription = [
   "Use-To-Earn Blockchain Social Media Platform",
-  "Su23: Software Engineering Intern",
+  "Summer 2023: Software Engineering Intern",
   "Website and NFT Program",
 ];
 
 const roverxDescription = [
   "NFT Trading and Blockchain Analytics App",
-  "Su23: Product Management Intern",
+  "Summer 2023: Product Management Intern",
   "Payments Case-Study",
   
 ];
 
 const avalancheDescription = [
   "LLM Training Optimization",
-  "Su22: Product Management Intern",
+  "Summer 2022: Product Management Intern",
 ];
 
 const evitadoDescription = [
   "AI Collision Sensing Tech for Aircraft",
-  "Su22: Operations Research Intern",
+  "Summer 2022: Operations Research Intern",
 ];
 const companies = [
   {
@@ -74,7 +74,7 @@ const CompaniesSection = () => {
       >
         <HStack spacing='24px'>
           {companies.map((company, index) => (
-            <ClubCard
+            <CompanyCard
               key={index}
               name={company.caption}
               description={company.description}
