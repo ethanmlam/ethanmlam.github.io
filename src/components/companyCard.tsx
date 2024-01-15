@@ -11,8 +11,6 @@ import {
   useBreakpointValue,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 type ClassCardProps = {
   name: string;
@@ -67,8 +65,6 @@ const CompanyCard: React.FC<ClassCardProps> = ({
           overflow="visible"
           position="relative"
           boxShadow="lg"
-          data-aos="fade-right"
-          data-aos-delay={delay}
           style={{
             backgroundImage:
             "linear-gradient(to bottom, rgba(0, 192, 255, 0.1), rgba(0,0,0, 0))",

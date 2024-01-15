@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Grid, HStack } from "@chakra-ui/react";
+import { Box, Heading, Grid, HStack, Stack } from "@chakra-ui/react";
 import CompanyCard from "./companyCard"; // Make sure to import CompanyCard component
 
 const utopicDescription = [
@@ -53,7 +53,7 @@ const companies = [
 
 const CompaniesSection = () => {
   return (
-    <Box data-aos="fade-right">
+    <Box>
       <Heading
         size="lg"
         marginLeft="30px"
@@ -72,7 +72,7 @@ const CompaniesSection = () => {
         marginTop="10px"
         width="100%" // Ensure it takes full width
       >
-        <HStack spacing='24px'>
+        <Stack spacing='24px'>
           {companies.map((company, index) => (
             <CompanyCard
               key={index}
@@ -83,7 +83,7 @@ const CompaniesSection = () => {
               delay={index*50}
             />
           ))}
-        </HStack>
+        </Stack>
       </Box>
     </Box>
   );

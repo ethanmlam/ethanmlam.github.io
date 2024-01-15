@@ -85,6 +85,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
       top={0}          // Fixed to the top
       height="100%"    // Full height of the viewport
       flexShrink={0}
+      display={{ base: "none", md: "block" }}
     >
       {/* Content of the fixed side panel */}
       <VStack
