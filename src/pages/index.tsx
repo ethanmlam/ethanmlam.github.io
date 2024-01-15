@@ -1,9 +1,6 @@
 import {
   ChakraProvider,
   extendTheme,
-  Center,
-  Heading,
-  Spinner,
   Divider,
   Flex,
   Box,
