@@ -1,13 +1,13 @@
+import React from 'react';
 import {
   ChakraProvider,
+  CSSReset,
   extendTheme,
   Divider,
   Flex,
   Box,
 } from "@chakra-ui/react";
-// import Header from "../components/header";
-// import HeroSection from "../components/HeroSection";
-// import React, { useState, useEffect } from "react";
+
 import About from "../components/about";
 import LeftSidebar from "../components/leftsidebarEthan";
 import CompaniesSection from "../components/companiesSection";
@@ -24,6 +24,7 @@ import "@fontsource/open-sans/400.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource-variable/space-grotesk";
 import Head from "next/head";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const theme = extendTheme({
   fonts: {
@@ -43,9 +44,16 @@ const theme = extendTheme({
     },
   },
 });
-export default function Home() {
+const Home: React.FC = () => {
+  const newFavicon = '/Users/ethanlam/website_code/testwebsite/public/favicon.ico';
   return (
     <ChakraProvider theme={theme}>
+      <HelmetProvider>
+        <Helmet>
+          <title>Ethan Lam</title>
+          <link rel="icon" type = "image/x-icon" href={newFavicon} />
+        </Helmet>
+        <CSSReset />
         <Flex>
           <Box>
           {/* Left Sidebar */}
@@ -76,6 +84,9 @@ export default function Home() {
             </div>
           </Box>
         </Flex>
+      </HelmetProvider>
     </ChakraProvider>
   );
 }
+
+export default Home
