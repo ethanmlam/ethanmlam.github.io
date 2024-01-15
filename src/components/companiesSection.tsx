@@ -56,7 +56,7 @@ const CompaniesSection = () => {
     <Box>
       <Heading
         size="lg"
-        marginLeft="30px"
+        marginLeft={{ base: "30px", md: "30px" }}
         textAlign="left"
         fontWeight="100"
         marginBottom={{ base: "20px", md: "40px" }}
@@ -72,7 +72,7 @@ const CompaniesSection = () => {
         marginTop="10px"
         width="100%" // Ensure it takes full width
       >
-        <Stack spacing='24px'>
+        <Stack spacing='24px' direction={{ base: 'column', md: 'column', lg: 'row' }}>
           {companies.map((company, index) => (
             <CompanyCard
               key={index}

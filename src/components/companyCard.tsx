@@ -30,8 +30,9 @@ const CompanyCard: React.FC<ClassCardProps> = ({
   //lowered by two
   const width = useBreakpointValue({
     base: "65vw",
-    sm: "40vh",
-    md: "30vh",
+    sm: "30vh",
+    md: "40vh",
+    lg: "30vh"
   });
 
   const imageSize = useBreakpointValue({
@@ -59,7 +60,7 @@ const CompanyCard: React.FC<ClassCardProps> = ({
           p="4"
           mb="4"
           width={width}
-          minHeight="320px"
+          minHeight="300px"
           maxHeight="fit-content"
           height="fit-content"
           overflow="visible"

@@ -12,11 +12,13 @@ import {
   VStack,
   Divider,
   Link,
+  Center,
 } from "@chakra-ui/react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 // import ClassCard from "./classcard";
 import { motion } from "framer-motion";
+import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 export default function About() {
   
@@ -104,22 +106,34 @@ export default function About() {
 
   return (
 
-    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="50px">
+    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="50px" marginRight={{base: "30", lg: '3%' }}>
       {/* Your main content goes here */}
-      <Box height="px" />
       {/* <HeroSection /> */}
       <Stack
-        direction={{ base: "column", md: "row" }}
+        direction={{ base: "column", md: "row", lg: "row" }}
         spacing={{ base: 5, md: 25 }}
         align={{ base: "center", md: "start" }}
         justify={{ md: "space-between" }} // Add this line
-        data-aos="fade-up"
       >
         
 
         {/* Text content */}
         <Box flex="1" pr={{ base: 0, md: 140 }}>
-          <Heading fontWeight="20" fontSize={largeheadingSize}>
+          <Heading fontWeight="20" fontSize='2xl' textAlign="center" display = {{base: "block", md: "none"}}>
+            Hi there!<br></br>My name is Ethan Lam. 
+          </Heading>
+          <Image
+            src="https://i.ibb.co/K0QYdgR/5-D075-D4-A-BE43-4162-B564-D64-C79-A16-C52-1-201-a.jpg"
+            alt="Headshot"
+            w={imageSize}
+            h={imageSize}
+            textAlign="center"
+            mx = "auto"
+            mb = "20px"
+            display = {{base: "block", md: "none"}}
+            className="rounded-md"
+          /> 
+          <Heading fontWeight="20" fontSize={largeheadingSize} display = {{base: "none", md: "block"}}>
             Hi there! My name is Ethan Lam. 
           </Heading>
         {/* Additional text content and buttons can be added here */}

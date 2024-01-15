@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import {
   VStack,
+  Stack,
   HStack,
   Box,
   Heading,
@@ -39,7 +40,7 @@ export default function Projects() {
       association: "CalHacks 2022",
       github: "https://github.com/ethan-m-lam/CalHacks_fortress",
       demo: "",
-      longDescription: "Fortress is a song recommendation platform leveraging React, Flask, and PyTorch for users to find popular songs with a desired mood. The model is trained using sentiment analysis on a 10,000 most-played song dataset. Each song is given a normalized score and stored on a Flask backend. The user simply drags a slider and receives a list of song recommendations that fit that mood. Fortress received an over 90% approval rating from a poll of fellow hackers at the CalHacks.",
+      longDescription: "Fortress is an advanced song recommendation system that utilizes a technology stack comprising React, Flask, and PyTorch. It employs sentiment analysis on a curated dataset containing the 10,000 most-played songs. Each song is assigned a normalized score and the results are stored in a Flask backend. The user interface allows individuals to manipulate a slider to indicate their desired mood, prompting the system to generate and present a list of tailored song recommendations. Fortress garnered an approval rating exceeding 90% in a poll conducted among fellow hackers at CalHacks2022.",
     },
     {
       title: "Future Fund",
@@ -114,7 +115,7 @@ export default function Projects() {
       height="auto"
       marginTop="5vh"
     >
-      <VStack spacing="20px" align="center">
+      <Stack spacing="20px" align="center" direction={{ base: 'column', md: 'column', lg: 'column' }}>
         <SimpleGrid columns={{ base: 1, lg: 3 }} spacing="20px">
           {projects.map((project, index) => (
             <ProjectCard
@@ -132,7 +133,7 @@ export default function Projects() {
             />
           ))}
         </SimpleGrid>
-      </VStack>
+      </Stack>
     </Box>
     </Box>
   );

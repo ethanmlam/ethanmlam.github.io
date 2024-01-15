@@ -58,7 +58,7 @@ export default function Home() {
             </div>
           </Box>
 
-          <Box maxWidth="100%" width="100%" ml="350px">
+          <Box maxWidth="100%" width="100%" marginLeft={{ base: "none", md: "0", lg: "350" }}>
             {/* <Header /> */}
             <div id="about-section">
               <About />

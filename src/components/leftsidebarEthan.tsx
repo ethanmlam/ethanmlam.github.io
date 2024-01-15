@@ -78,7 +78,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
     <Box
       bg="white.000"  // Background color
       color="black"   // Text color
-      width="350px"   // Fixed width of the side panel
+      width={{ base: "0", lg: "350px" }}   // Fixed width of the side panel
       boxShadow="md"  // Box shadow
       position="fixed" // Fixed position
       left={0}         // Fixed to the left side
