@@ -18,7 +18,7 @@ const Footer: React.FC = () => {
             <FaLinkedin size={24} />
           </Link>
         </HStack>
-        <p style={footerText}>© 2023 Ethan Lam. Built on the T3 Stack.</p>
+        <p style={footerText}>© 2024 Ethan Lam. Built on the T3 Stack.</p>
       </footer>
     </Box>
   );

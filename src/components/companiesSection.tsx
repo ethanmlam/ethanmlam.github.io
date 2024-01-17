@@ -34,7 +34,7 @@ const companies = [
   {
     logo: "https://play-lh.googleusercontent.com/8vlY-zSQWFQI4gDzDG2XGcP8ex7ZM55jvpROBemYgA2PY_LCDXuRIlFpCYHGfMrmNiN6=w240-h480-rw",
     caption: "RoverX (YC S21)",
-    link: "https://roverx.io",
+    link: "https://play.google.com/store/apps/details?id=io.roverx.mobileapp&hl=en_US&gl=US",
     description: roverxDescription,
   },
   {
