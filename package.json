@@ -34,6 +34,7 @@
     "react-icons": "^4.10.1",
     "react-scroll": "^1.8.9",
     "react-wavify": "^1.8.2",
+    "webpack": "^5.90.0",
     "zod": "^3.21.4"
   },
   "devDependencies": {
