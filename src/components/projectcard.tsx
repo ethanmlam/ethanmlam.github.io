@@ -68,6 +68,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                     borderRadius="lg"
                     maxHeight="90px"
                     maxWidth="30vh"
+                    objectFit="cover"  
                   />
                   <Heading size="md" marginTop="15px" fontWeight="700">
                     {title}
@@ -75,7 +76,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
                   <Text textAlign="center">{description}</Text>
                   <Box textAlign="center" className="15px">
                     <Text fontSize="sm" fontWeight="400" mb="2">
-                      Technologies/Languages:
+                      Technologies:
                     </Text>
                     <Stack
                       direction="row"

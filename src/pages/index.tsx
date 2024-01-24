@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {
   ChakraProvider,
   CSSReset,
@@ -13,6 +13,7 @@ import LeftSidebar from "../components/leftsidebarEthan";
 import CompaniesSection from "../components/companiesSection";
 import Projects from "../components/projects";
 import Footer from "../components/footer";
+import GoogleAnalytics from "../components/googleA";
 // import "@fontsource/lato/100.css";
 import "@fontsource/lato/300.css";
 import "@fontsource/lato/400.css";
@@ -25,6 +26,17 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource-variable/space-grotesk";
 import Head from "next/head";
 import { Helmet, HelmetProvider } from "react-helmet-async";
+
+import ReactGA from 'react-ga';
+declare global {
+  interface Window {
+    dataLayer: any[];
+    gtag: (...args: any[]) => void;
+  }
+}
+
+ReactGA.initialize('G-E7JHH5RZTG');
+
 
 const theme = extendTheme({
   fonts: {
@@ -44,6 +56,7 @@ const theme = extendTheme({
     },
   },
 });
+
 const Home: React.FC = () => {
   const newFavicon = '/Users/ethanlam/website_code/testwebsite/public/favicon.ico';
   return (
