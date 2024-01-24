@@ -96,6 +96,9 @@ const Home: React.FC = () => {
               <Footer/>
             </div>
           </Box>
+          <div>
+            <GoogleAnalytics />
+          </div>
         </Flex>
       </HelmetProvider>
     </ChakraProvider>
