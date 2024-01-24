@@ -11,14 +11,14 @@ const config = {
       files: ["*.ts", "*.tsx"],
       parserOptions: {
         project: path.join(__dirname, "tsconfig.json"),
-        extraFileExtensions: [".tsx" , ".ts"],
+        // extraFileExtensions: [".tsx" , ".ts"],
       },
     },
   ],
   parser: "@typescript-eslint/parser",
   parserOptions: {
     project: path.join(__dirname, "tsconfig.json"),
-    extraFileExtensions: [".tsx",  ".ts"],
+    // extraFileExtensions: [".tsx",  ".ts"],
   },
   plugins: ["@typescript-eslint"],
   extends: ["next/core-web-vitals", "plugin:@typescript-eslint/recommended"],
