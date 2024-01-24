@@ -40,7 +40,7 @@ export default function Projects() {
       association: "CalHacks 2022",
       github: "https://github.com/ethan-m-lam/CalHacks_fortress",
       demo: "",
-      longDescription: "Fortress is an advanced song recommendation system that utilizes a technology stack comprising React, Flask, and PyTorch. It employs a natural language processing BERT model trained on a 2000 song Spotify dataset to rank songs in the dataset on a scale of sad to happy. Fortress garnered an approval rating exceeding 90% in a poll conducted among fellow hackers at CalHacks2022.",
+      longDescription: "Fortress is an advanced song recommendation system that utilizes a technology stack comprising React, Flask, and PyTorch. It employs a natural language processing BERT model trained on the top 2000 most played song Spotify dataset to rank songs in the dataset on a scale of sad to happy. Users then receive a list of songs that reflect their chosen mood. Fortress garnered an approval rating exceeding 90% in a poll conducted among fellow hackers at CalHacks2022.",
     },
     {
       title: "Future Fund",
@@ -52,7 +52,7 @@ export default function Projects() {
       github: "https://github.com/ownssi/Defi-Fa2023",
       demo: "",
       longDescription:
-        "Future Fund is a full-stack crowdfunding platform for college students to receive crypto scholarships in a transparent fashion. Leveraging Solidity smart contracts to ensure accountability for donors, students, and colleges, our project was in conversation for VC funding.",
+        "Future Fund is a full-stack crowdfunding platform for college students to receive crypto scholarships in a transparent fashion. We leveraged Solidity smart contracts to ensure accountability and instant settlement for donors, students, and colleges. Our project was in conversation for VC funding.",
     },
     {
       title: "SIXT33N",
