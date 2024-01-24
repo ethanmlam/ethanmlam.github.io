@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Heading, Grid, HStack, Stack } from "@chakra-ui/react";
+import { Box, Heading, Stack } from "@chakra-ui/react";
 import CompanyCard from "./companyCard"; // Make sure to import CompanyCard component
 
 const utopicDescription = [

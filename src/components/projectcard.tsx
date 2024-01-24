@@ -10,9 +10,8 @@ import {
   Divider,
   Box,
   useDisclosure,
-  useBreakpointValue,
 } from "@chakra-ui/react";
-import { StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -48,7 +47,6 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   }, []);
 
   const { isOpen, onOpen, onClose } = useDisclosure();
-  const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
 
   return (
       
@@ -63,6 +61,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               <CardBody>
                 <Stack mt="6" spacing="3" align="center" justifyContent="center">
                   <Image
+                    // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment, @typescript-eslint/no-unsafe-member-access
                     src={typeof image === "string" ? image : image.src}
                     alt="Project Image"
                     borderRadius="lg"
@@ -120,6 +119,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
               onClose={onClose}
               title={title}
               description={description}
+              // eslint-disable-next-line @typescript-eslint/no-unsafe-assignment
               thumbnailURL={image}
               technologies={technologies}
               github={github}

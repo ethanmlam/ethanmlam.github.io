@@ -17,7 +17,7 @@ import {
   Spinner,
   Image,
 } from "@chakra-ui/react";
-import { StaticImageData } from "next/image";
+import { type StaticImageData } from "next/image";
 import { FaGithub } from "react-icons/fa";
 
 type ProjectModalProps = {

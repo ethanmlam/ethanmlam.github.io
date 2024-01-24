@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   ChakraProvider,
   CSSReset,
@@ -23,7 +23,6 @@ import "@fontsource/montserrat/400.css";
 import "@fontsource/open-sans/400.css";
 import "@fontsource/montserrat/400.css";
 import "@fontsource-variable/space-grotesk";
-import Head from "next/head";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ReactGA from 'react-ga';

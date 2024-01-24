@@ -1,11 +1,8 @@
 import React, { useEffect } from "react";
 import {
-  VStack,
   Stack,
-  HStack,
   Box,
   Heading,
-  useDisclosure,
   SimpleGrid,
 } from "@chakra-ui/react";
 import ProjectCard from "./projectcard";

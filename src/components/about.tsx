@@ -1,108 +1,22 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Box,
   Heading,
   useBreakpointValue,
   Stack,
   Text,
-  Flex,
   Image,
-  useDisclosure,
-  HStack,
-  VStack,
-  Divider,
-  Link,
-  Center,
 } from "@chakra-ui/react";
-import AOS from "aos";
 import "aos/dist/aos.css";
 // import ClassCard from "./classcard";
-import { motion } from "framer-motion";
-import { NodeNextRequest } from "next/dist/server/base-http/node";
 
 export default function About() {
-  
 
-
-  // useEffect(() => {
-  //   AOS.init({ duration: 800 });
-  // }, []);
-  // const Header: React.FC = () => {
-  //   return (
-   
-  // };
-  const headerStyle = {
-    display: "flex",
-    // justifyContent: "center",
-    // alignItems: "center",
-    backgroundColor: "white",
-    color: "black",
-    height: "80px",
-  };
   
-  const headingStyle = {
-    fontFamily: "Montserrat, sans-serif",
-    fontWeight: 300,
-    fontSize: "1.5rem",
-  };
   const headingSize = useBreakpointValue({ base: "100%", md: "xl" });
   const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
   const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
-  const { isOpen, onOpen, onClose } = useDisclosure();
 
-  // const saasDescription = [
-  //   "A community of UC Berkeley students with a shared interest in data science.",
-  //   "Fa22: Web Development Committee",
-  //   "Sp23: Web Development Committee",
-  //   "Fa23: Leadership, Web Developer",
-  // ];
-
-  // const babDescription = [
-  //   "A student-run organization at UC Berkeley focused on blockchain innovation via education, research, and consulting.",
-  //   "Sp23: Internal Developer, B@BPoll  Governance: Uniswap, Aave Teams",
-  //   "Fa23: External Developer, TBD Project",
-  // ];
-
-  // const classes = [
-  //   {
-  //     name: "EECS 16B",
-  //     description: "Designing Information Devices and Systems II",
-  //     link: "https://www.eecs16b.org/",
-  //   },
-  //   {
-  //     name: "CS 61B",
-  //     description: "Data Structures and Algorithms",
-  //     link: "https://fa22.datastructur.es/",
-  //   },
-  //   {
-  //     name: "CS 61C",
-  //     description: "Great Ideas in Computer Architecture",
-  //     link: "https://cs61c.org/",
-  //   },
-  //   {
-  //     name: "CS 70",
-  //     description: "Discrete Mathematics and Probability Theory",
-  //     link: "https://eecs70.org/",
-  //   },
-  //   {
-  //     name: "CS 194-177",
-  //     description: "Decentralized Finance",
-  //     link: "https://rdi.berkeley.edu/berkeley-defi/f23",
-  //   },
-  //   {
-  //     name: "Data 100",
-  //     description: "Principles of Data Science",
-  //     link: "https://ds100.org/fa23/",
-  //   },
-  // ];
-
-  // const rows = [];
-  // const rowSize = 2;
-
-  // for (let i = 0; i < classes.length; i += rowSize) {
-  //   const row = classes.slice(i, i + rowSize);
-  //   rows.push(row);
-  // }
 
   return (
 

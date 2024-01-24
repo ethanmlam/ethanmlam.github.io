@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Box,
   Heading,
@@ -10,7 +10,6 @@ import {
   Link,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
-import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -22,11 +21,11 @@ const headerStyle = {
   height: "80px",
 };
 
-const headingStyle = {
-  fontFamily: "Lato, serif",
-  fontWeight: 300,
-  fontSize: "1.5rem", 
-};
+// const headingStyle = {
+//   fontFamily: "Lato, serif",
+//   fontWeight: 300,
+//   fontSize: "1.5rem", 
+// };
 
 const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
 const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
