@@ -46,10 +46,10 @@ export default function Projects() {
       image: "https://i.ibb.co/BBH2x23/Screen-Shot-2024-01-13-at-10-37-09-PM.png",
       technologies: ["Solidity", "Python", "Firebase", "FastAPI"],
       association: "Decentralized Finance",
-      github: "https://github.com/ownssi/Defi-Fa2023",
+      github: "https://github.com/ethan-m-lam/FutureFund/",
       demo: "",
       longDescription:
-        "Future Fund is a full-stack crowdfunding platform for college students to receive crypto scholarships in a transparent fashion. We leveraged Solidity smart contracts to ensure accountability and instant settlement for donors, students, and colleges. Our project was in conversation for VC funding.",
+        "Future Fund is a full-stack crowdfunding platform removing bureaucracy in college scholarship application processes by providing a unified platform for application, vetting, and outcome tracking. We leveraged Solidity smart contracts to ensure accountability and quick settlement for donors, students, and colleges. Our project was in conversation for VC funding.",
     },
     {
       title: "SIXT33N",
@@ -78,7 +78,7 @@ export default function Projects() {
     },
     
     {
-      title: "Flower World",
+      title: "Flower World", 
       description:
         "Rogue-Like Flower Collecting RPG Game with Levels",
       image: "https://i.ibb.co/TRDsHNL/Screen-Shot-2024-01-13-at-10-29-40-PM.png",
