@@ -57,7 +57,6 @@ export default function About() {
               <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
               <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
           </Text>
-          
         </Box>
       </Stack>
       
