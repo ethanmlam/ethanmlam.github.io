@@ -8,6 +8,7 @@ import {
   VStack,
   Divider,
   Link,
+  Button,
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
@@ -154,6 +155,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
           contact me: 
           ethanmlam@berkeley.edu
         </Heading>
+        
 
         {/* //Resume
         <Box textAlign="center" marginTop="25px" marginBottom="15vh">
@@ -179,6 +181,18 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
         </Box>
         <ResumeModal isOpen={isOpen} onClose={onClose} />   */}
         </Box>
+        <Button size='lg' bgGradient="linear-gradient(to right, rgba(0,35,36,0.1), rgba(9,9,121,0.21), rgba(0,212,255,0.9))">
+          <Link
+            href={"https://www.fivew.xyz"}
+            isExternal
+            _hover={{ textDecoration: "none" }}
+            display="block"
+          >
+            <Heading fontWeight="600" fontSize={headingSize} >
+              check out what<br></br> I'm building @ fivew.xyz
+            </Heading>
+          </Link>
+        </Button>
       </VStack>
     </Box>
   );
