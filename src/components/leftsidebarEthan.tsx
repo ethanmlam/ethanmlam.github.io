@@ -189,7 +189,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
             display="block"
           >
             <Heading fontWeight="600" fontSize={headingSize} >
-              check out what<br></br> I'm building @ fivew.xyz
+              check out what<br></br>I am building @ fivew.xyz
             </Heading>
           </Link>
         </Button>
