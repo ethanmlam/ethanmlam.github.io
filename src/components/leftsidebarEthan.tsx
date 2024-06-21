@@ -12,7 +12,7 @@ import {
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
 
 const LeftSidebar = () => {
 const headerStyle = {
@@ -121,6 +121,11 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
               spacing={4}
             >
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
+                <Link href="https://www.twitter.com/ethanmlam" isExternal>
+                  <FaTwitter size={24} />
+                </Link>
+              </motion.button>
+              <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
                 <Link href="https://github.com/ethan-m-lam" isExternal>
                   <FaGithub size={24} />
                 </Link>
@@ -181,7 +186,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
         </Box>
         <ResumeModal isOpen={isOpen} onClose={onClose} />   */}
         </Box>
-        <Button size='lg' bgGradient="linear-gradient(to right, rgba(0,35,36,0.1), rgba(9,9,121,0.21), rgba(0,212,255,0.9))">
+        <Button size='lg' bgGradient="linear-gradient(to right, rgba(300,309,206,0.1),  rgba(0,212,255,0.41), rgba(19,109,201,0.8))">
           <Link
             href={"https://www.fivew.xyz"}
             isExternal
