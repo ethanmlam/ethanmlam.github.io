@@ -31,7 +31,7 @@ const CompanyCard: React.FC<ClassCardProps> = ({
   const width = useBreakpointValue({
     base: "65vw",
     sm: "30vh",
-    md: "40vh",
+    md: "30vh",
     lg: "30vh"
   });
 

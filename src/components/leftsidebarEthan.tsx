@@ -28,9 +28,9 @@ const headerStyle = {
 //   fontSize: "1.5rem", 
 // };
 
-const headingSize = useBreakpointValue({ base: "100%", md: "lg" });
-const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
-const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
+const headingSize = useBreakpointValue({ base: "100%"});
+const largeheadingSize = useBreakpointValue({ base: "100%"});
+const imageSize = useBreakpointValue({ base: "250px"});
 
 
 // const classes = [
@@ -78,14 +78,14 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
     <Box
       bg="white.000"  // Background color
       color="black"   // Text color
-      width={{ base: "0", lg: "350px" }}   // Fixed width of the side panel
+      width={{ base: "0px", lg: "350px" }}   // Fixed width of the side panel
       boxShadow="md"  // Box shadow
       position="fixed" // Fixed position
       left={0}         // Fixed to the left side
       top={0}          // Fixed to the top
       height="100%"    // Full height of the viewport
       flexShrink={0}
-      display={{ base: "none", md: "block" }}
+      display={{ base: "none",lg: "block" }}
     >
       {/* Content of the fixed side panel */}
       <VStack
@@ -191,7 +191,7 @@ const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
             href={"https://www.fivew.xyz"}
             isExternal
             _hover={{ textDecoration: "none" }}
-            display="block"
+            display = {{md: "0px", lg: "block"}}
           >
             <Heading fontWeight="600" fontSize={headingSize} >
               check out what<br></br>I am building @ fivew.xyz

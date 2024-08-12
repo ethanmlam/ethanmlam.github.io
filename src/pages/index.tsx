@@ -74,16 +74,11 @@ const Home: React.FC = () => {
             </div>
           </Box>
 
-          <Box maxWidth="100%" width="100%" marginLeft={{ base: "none", md: "0", lg: "350" }}>
+          <Box maxWidth="100%" width="100%" marginLeft={{ base: "none", lg: "350px" }}>
             {/* <Header /> */}
             <div id="about-section">
               <About />
               <CompaniesSection />
-            </div>
-            <div id="comp-section">
-              
-              {/* <About />
-              <CompaniesSection /> */}
             </div>
            
             <Flex flexDirection="column" alignItems="center">
