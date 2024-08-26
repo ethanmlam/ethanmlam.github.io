@@ -9,10 +9,11 @@ import {
   Divider,
   Link,
   Button,
+  Text, // Add this line
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
-import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaEnvelope, FaTwitter, FaArrowRight } from "react-icons/fa";
 
 const LeftSidebar = () => {
 const headerStyle = {
@@ -161,44 +162,31 @@ const imageSize = useBreakpointValue({ base: "250px"});
           ethanmlam@berkeley.edu
         </Heading>
         
-
-        {/* //Resume
-        <Box textAlign="center" marginTop="25px" marginBottom="15vh">
-          <motion.button
-            whileHover={{ scale: 1.1 }}
-            whileTap={{ scale: 0.9 }}
-            style={{
-              background:
-                "linear-gradient(to right, rgba(29, 211, 189, 0.3), rgba(62, 100, 255, 0.3))",
-              display: "flex",
-              borderRadius: "25px",
-              padding: "10px 10px",
-              justifyContent: "center",
-              minWidth: "150px", // Added minimum width to prevent button from shrinking too much
-            }}
-            onClick={onOpen}
-          >
-            <Text fontSize="xl" fontWeight="400">
-              {" "}
-              View Resume{" "}
-            </Text>
-          </motion.button>
-        </Box>
-        <ResumeModal isOpen={isOpen} onClose={onClose} />   */}
-        </Box>
-        <Button size='lg'>
-          <Link
-            href={"https://www.fivew.xyz"}
-            isExternal
-            _hover={{ textDecoration: "none" }}
-            display = {{md: "0px", lg: "block"}}
-          >
-            <Heading fontWeight="600" fontSize={headingSize} >
-              check out what<br></br>I am building @ fivew.xyz
-            </Heading>
-          </Link>
-        </Button>
-      </VStack>
+        {/* Add spacing here */}
+        <Box height="20px" />
+        
+        <Link
+      href="https://www.fivew.xyz"
+      isExternal
+      _hover={{ textDecoration: "none", transform: "scale(1.05)" }}
+      display={{ md: "none", lg: "block" }}
+     >
+            <Button
+              size="lg"
+              variant="outline"
+              colorScheme="blue"
+              rightIcon={<FaArrowRight />}
+              _hover={{ bg: "blue.50" }}
+            >
+              <VStack align="start" spacing={1}>
+                <Heading as="h3" fontWeight="600" fontSize={headingSize}>
+                  Building fivew.xyz
+                </Heading>
+              </VStack>
+            </Button>
+        </Link>
+    </Box>
+    </VStack>
     </Box>
   );
 }  
