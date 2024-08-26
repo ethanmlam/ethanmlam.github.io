@@ -186,7 +186,7 @@ const imageSize = useBreakpointValue({ base: "250px"});
         </Box>
         <ResumeModal isOpen={isOpen} onClose={onClose} />   */}
         </Box>
-        <Button size='lg' bgGradient="linear-gradient(to right, rgba(300,309,206,0.1),  rgba(0,212,255,0.41), rgba(19,109,201,0.8))">
+        <Button size='lg'>
           <Link
             href={"https://www.fivew.xyz"}
             isExternal
