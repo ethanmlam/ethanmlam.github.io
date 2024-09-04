@@ -23,14 +23,9 @@ const headerStyle = {
   height: "80px",
 };
 
-// const headingStyle = {
-//   fontFamily: "Lato, serif",
-//   fontWeight: 300,
-//   fontSize: "1.5rem", 
-// };
 
 const headingSize = useBreakpointValue({ base: "100%"});
-const largeheadingSize = useBreakpointValue({ base: "100%"});
+const largeheadingSize = useBreakpointValue({ base: "150%"});
 const imageSize = useBreakpointValue({ base: "250px"});
 
 
@@ -105,10 +100,10 @@ const imageSize = useBreakpointValue({ base: "250px"});
 
         {/* Image */}
         <Image
-          src="https://i.ibb.co/K0QYdgR/5-D075-D4-A-BE43-4162-B564-D64-C79-A16-C52-1-201-a.jpg"
+          src="/ethan_pfp.jpeg"
           alt="Headshot"
           w={imageSize}
-          h={imageSize}
+          h={312.5}
           className="rounded-md"
         /> 
         {/* Social Media Icons*/}
@@ -123,12 +118,12 @@ const imageSize = useBreakpointValue({ base: "250px"});
             >
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
                 <Link href="https://www.twitter.com/ethanmlam" isExternal>
-                  <FaTwitter size={24} />
+                  <FaTwitter size={30} />
                 </Link>
               </motion.button>
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
                 <Link href="https://github.com/ethan-m-lam" isExternal>
-                  <FaGithub size={24} />
+                  <FaGithub size={30} />
                 </Link>
               </motion.button>
               {/* <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
@@ -138,7 +133,7 @@ const imageSize = useBreakpointValue({ base: "250px"});
               </motion.button> */}
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
                 <Link href="https://www.linkedin.com/in/ethan-m-lam/" isExternal>
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={30} />
                 </Link>
               </motion.button>
             </HStack>

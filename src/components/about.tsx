@@ -37,7 +37,7 @@ export default function About() {
             Hi there!<br></br>My name is Ethan Lam. 
           </Heading>
           <Image
-            src="https://i.ibb.co/K0QYdgR/5-D075-D4-A-BE43-4162-B564-D64-C79-A16-C52-1-201-a.jpg"
+            src="/ethan_pfp.jpeg"
             alt="Headshot"
             w={imageSize}
             h={imageSize}
