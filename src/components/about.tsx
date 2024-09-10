@@ -53,7 +53,7 @@ export default function About() {
         {/* Additional text content and buttons can be added here */}
           <Text fontWeight="20" fontSize={headingSize}>
               I’m a Senior at University of California, Berkeley studying Electrical Engineering and Computer Science (EECS) and Industrial Engineering and Operations Research (IEOR), providing me a holistic perspective within hardware, software, and organizational contexts. 
-              <br></br>Currently, I am building an Ava Labs funded SocialFi platform for researchers @ FiveW.
+              <br></br>Currently, I am building FiveW, an Ava Labs funded SocialFi platform for researchers.
               <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
               <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
           </Text>
