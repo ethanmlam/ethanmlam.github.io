@@ -22,7 +22,7 @@ export default function About() {
 
     <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="50px" marginRight={{base: "30", lg: '3%' }}>
       {/* Your main content goes here */}
-      {/* <HeroSection /> */}
+      {/* <HeroSection x/> */}
       <Stack
         direction={{ base: "column", md: "row", lg: "row" }}
         spacing={{ base: 5, md: 25 }}
@@ -34,13 +34,13 @@ export default function About() {
         {/* Text content */}
         <Box flex="1" pr={{ base: 0, md: 140 }}>
           <Heading fontWeight="20" fontSize='2xl' textAlign="center" display = {{base: "block", md: "none"}}>
-            Hi there!<br></br>My name is Ethan Lam. 
+            Hi there!<br></br>My name is Ethan Lam.<br></br> 
           </Heading>
           <Image
             src="/ethan_pfp.jpeg"
             alt="Headshot"
             w={imageSize}
-            h={imageSize}
+            h={312.5}
             textAlign="center"
             mx = "auto"
             mb = "20px"
@@ -48,7 +48,7 @@ export default function About() {
             className="rounded-md"
           /> 
           <Heading fontWeight="20" fontSize={largeheadingSize} display = {{base: "none", md: "block"}}>
-            Hi there! My name is Ethan Lam. 
+            Hi there! My name is Ethan Lam.
           </Heading>
         {/* Additional text content and buttons can be added here */}
           <Text fontWeight="20" fontSize={headingSize}>
