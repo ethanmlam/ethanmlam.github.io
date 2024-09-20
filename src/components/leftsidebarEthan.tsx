@@ -122,7 +122,7 @@ const imageSize = useBreakpointValue({ base: "250px"});
                 </Link>
               </motion.button>
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
-                <Link href="https://github.com/ethan-m-lam" isExternal>
+                <Link href="https://github.com/ethanmlam" isExternal>
                   <FaGithub size={30} />
                 </Link>
               </motion.button>
