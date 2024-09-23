@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
       <Divider orientation="horizontal" />
       <footer style={footerStyle}>
         <HStack justifyContent="center" spacing={4}>
-          <Link href="https://github.com/ethan-m-lam" isExternal>
+          <Link href="https://github.com/ethanmlam" isExternal>
             <FaGithub size={24} />
           </Link>
           {/* <Link href="https://twitter.com/adriankwann" isExternal>
