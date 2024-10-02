@@ -54,7 +54,7 @@ export default function About() {
     
         {/* Additional text content and buttons can be added here */}
             <Text fontWeight="20" fontSize={headingSize} >
-                I’m a senior at UC Berkeley studying EECS and IEOR, providing me a strong foundation in coding and operations research.
+                I’m a senior at UC Berkeley studying EECS and IEOR, providing me a strong foundation in software and distributed systems.
                 <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
                 <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
             </Text>
