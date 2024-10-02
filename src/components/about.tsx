@@ -6,6 +6,7 @@ import {
   Stack,
   Text,
   Image,
+  Center,
 } from "@chakra-ui/react";
 import "aos/dist/aos.css";
 // import ClassCard from "./classcard";
@@ -50,13 +51,13 @@ export default function About() {
           <Heading fontWeight="20" fontSize={largeheadingSize} display = {{base: "none", md: "block"}}>
             Hi there! My name is Ethan Lam.
           </Heading>
+    
         {/* Additional text content and buttons can be added here */}
-          <Text fontWeight="20" fontSize={headingSize}>
-              I’m a Senior at University of California, Berkeley studying Electrical Engineering and Computer Science (EECS) and Industrial Engineering and Operations Research (IEOR), providing me a holistic perspective within emerging tech, software, and organizational contexts. 
-              <br></br>Currently, I am building FiveW, an Ava Labs funded social platform for researchers.
-              <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
-              <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
-          </Text>
+            <Text fontWeight="20" fontSize={headingSize} >
+                I’m a senior at UC Berkeley studying EECS and IEOR, providing me a strong foundation in coding and operations research.
+                <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
+                <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
+            </Text>
         </Box>
       </Stack>
       

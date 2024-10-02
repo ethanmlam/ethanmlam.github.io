@@ -29,47 +29,6 @@ const largeheadingSize = useBreakpointValue({ base: "150%"});
 const imageSize = useBreakpointValue({ base: "250px"});
 
 
-// const classes = [
-//   {
-//     name: "EECS 16B",
-//     description: "Designing Information Devices and Systems II",
-//     link: "https://www.eecs16b.org/",
-//   },
-//   {
-//     name: "CS 61B",
-//     description: "Data Structures and Algorithms",
-//     link: "https://fa22.datastructur.es/",
-//   },
-//   {
-//     name: "CS 61C",
-//     description: "Great Ideas in Computer Architecture",
-//     link: "https://cs61c.org/",
-//   },
-//   {
-//     name: "CS 70",
-//     description: "Discrete Mathematics and Probability Theory",
-//     link: "https://eecs70.org/",
-//   },
-//   {
-//     name: "CS 194-177",
-//     description: "Decentralized Finance",
-//     link: "https://rdi.berkeley.edu/berkeley-defi/f23",
-//   },
-//   {
-//     name: "Data 100",
-//     description: "Principles of Data Science",
-//     link: "https://ds100.org/fa23/",
-//   },
-// ];
-
-// const rows = [];
-// const rowSize = 2;
-
-// for (let i = 0; i < classes.length; i += rowSize) {
-//   const row = classes.slice(i, i + rowSize);
-//   rows.push(row);
-// }
-
   return (
     <Box
       bg="white.000"  // Background color
