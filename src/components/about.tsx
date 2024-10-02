@@ -60,7 +60,7 @@ export default function About() {
             </Text>
         </Box>
       </Stack>
-      
+       
       { /*Student Orgs below (deleted)*/  }
       {/* <Box data-aos="zoom-in-left" marginTop={{ base: "5vh", md: "10vh" }}>
         <Heading
