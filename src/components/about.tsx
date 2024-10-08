@@ -52,8 +52,8 @@ export default function About() {
     
         {/* Additional text content and buttons can be added here */}
             <Text fontWeight="190" fontSize={headingSize} >
-                <br></br>I'm a senior at UC Berkeley studying Engineering (EECS + IEOR).
-                <br></br>I've been a lifelong builder passionate about creating end-to-end applications.
+                <br></br>I am a senior at UC Berkeley studying Engineering (EECS + IEOR).
+                <br></br>I am a lifelong builder passionate about creating end-to-end applications.
                 <br></br>My academic interests are in DeFi, generative AI, and emerging tech entrepreneurship. 
                 <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
             </Text>
