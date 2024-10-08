@@ -30,10 +30,8 @@ export default function About() {
         align={{ base: "center", md: "start" }}
         justify={{ md: "space-between" }} // Add this line
       >
-        
-
         {/* Text content */}
-        <Box flex="1" pr={{ base: 0, md: 140 }}>
+        <Box flex="1" pr={{ base: 0, md: 20 }}>
           <Heading fontWeight="20" fontSize='2xl' textAlign="center" display = {{base: "block", md: "none"}}>
             Hi there!<br></br>My name is Ethan Lam.<br></br> 
           </Heading>
@@ -53,8 +51,8 @@ export default function About() {
           </Heading>
     
         {/* Additional text content and buttons can be added here */}
-            <Text fontWeight="150" fontSize={headingSize} >
-                <br></br>I’m a senior at UC Berkeley studying EECS + IEOR with a strong foundation in software and distributed systems.
+            <Text fontWeight="190" fontSize={headingSize} >
+                <br></br>I’m a senior at UC Berkeley studying EECS + IEOR, and I'm a builder passionate about building end-to-end applications.
                 <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
                 <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
             </Text>
