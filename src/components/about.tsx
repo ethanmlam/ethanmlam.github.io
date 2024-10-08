@@ -21,7 +21,7 @@ export default function About() {
 
   return (
 
-    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="50px" marginRight={{base: "30", lg: '3%' }}>
+    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="60px" marginRight={{base: "30", lg: '3%' }}>
       {/* Your main content goes here */}
       {/* <HeroSection x/> */}
       <Stack
@@ -52,8 +52,9 @@ export default function About() {
     
         {/* Additional text content and buttons can be added here */}
             <Text fontWeight="190" fontSize={headingSize} >
-                <br></br>I’m a senior at UC Berkeley studying EECS + IEOR, and I'm a builder passionate about building end-to-end applications.
-                <br></br>My academic interests are in decentralized finance, generative AI, and emerging tech entrepreneurship. 
+                <br></br>I'm a senior at UC Berkeley studying Engineering (EECS + IEOR).
+                <br></br>I've been a lifelong builder passionate about creating end-to-end applications.
+                <br></br>My academic interests are in DeFi, generative AI, and emerging tech entrepreneurship. 
                 <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
             </Text>
         </Box>
