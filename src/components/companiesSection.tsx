@@ -3,7 +3,7 @@ import { Box, Heading, Stack } from "@chakra-ui/react";
 import CompanyCard from "./companyCard"; // Make sure to import CompanyCard component
 
 const utopicDescription = [
-  "Use-To-Earn Blockchain Social Media Platform",
+  "Blockchain Social Media Platform",
   "Summer 2023: Software Engineering Intern",
   "Website",
 ];
