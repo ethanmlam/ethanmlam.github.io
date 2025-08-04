@@ -5,7 +5,7 @@ import CompanyCard from "./companyCard"; // Make sure to import CompanyCard comp
 const utopicDescription = [
   "Use-To-Earn Blockchain Social Media Platform",
   "Summer 2023: Software Engineering Intern",
-  "Website and NFT Program",
+  "Website",
 ];
 
 const roverxDescription = [

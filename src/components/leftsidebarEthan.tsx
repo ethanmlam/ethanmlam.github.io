@@ -8,8 +8,8 @@ import {
   VStack,
   Divider,
   Link,
+  Text,
   Button,
-  Text, // Add this line
 } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 import "aos/dist/aos.css";
@@ -23,26 +23,23 @@ const headerStyle = {
   height: "80px",
 };
 
-
 const headingSize = useBreakpointValue({ base: "100%"});
 const largeheadingSize = useBreakpointValue({ base: "150%"});
 const imageSize = useBreakpointValue({ base: "250px"});
 
-
   return (
     <Box
-      bg="white.000"  // Background color
-      color="black"   // Text color
-      width={{ base: "0px", lg: "350px" }}   // Fixed width of the side panel
-      boxShadow="md"  // Box shadow
-      position="fixed" // Fixed position
-      left={0}         // Fixed to the left side
-      top={0}          // Fixed to the top
-      height="100%"    // Full height of the viewport
+      bg="white.000"  
+      color="black"   
+      width={{ base: "0px", lg: "350px" }}   
+      boxShadow="md"  
+      position="fixed" 
+      left={0}         
+      top={0}          
+      height="100%"    
       flexShrink={0}
       display={{ base: "none",lg: "block" }}
     >
-      {/* Content of the fixed side panel */}
       <VStack
         width="100%"
         paddingX={8}
@@ -85,11 +82,11 @@ const imageSize = useBreakpointValue({ base: "250px"});
                   <FaGithub size={30} />
                 </Link>
               </motion.button>
-              {/* <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
-              <Link href="ethanmlam@berkeley.edu" isExternal>
-                <FaEnvelope size={24} />
-              </Link>
-              </motion.button> */}
+              <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
+                <Link href="mailto:ethanmlam@berkeley.edu" isExternal>
+                  <FaEnvelope size={30} />
+                </Link>
+              </motion.button>
               <motion.button whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
                 <Link href="https://www.linkedin.com/in/ethan-m-lam/" isExternal>
                   <FaLinkedin size={30} />
@@ -100,31 +97,31 @@ const imageSize = useBreakpointValue({ base: "250px"});
           <Divider orientation="horizontal" />
         </Box>
         <Box
-        display="flex"
-        flexDirection="column"
-        alignItems="center"
-        justifyContent="center"
-        marginBottom="25px"
-        data-aos="zoom-out-up"
-        marginTop="0px"
-        maxWidth={{ base: "90%", sm: "80%", md: "70%", lg: "50%" }}
-        marginLeft="auto"
-        marginRight="auto"
-      >
-        <Heading fontWeight="2" fontSize={headingSize} >
-          contact me: 
-          ethanmlam@berkeley.edu
-        </Heading>
-        
-        {/* Add spacing here */}
-        <Box height="20px" />
-        
-        <Link
-      href="https://www.fivew.xyz"
-      isExternal
-      _hover={{ textDecoration: "none", transform: "scale(1.05)" }}
-      display={{ md: "none", lg: "block" }}
-     >
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+          justifyContent="center"
+          marginBottom="25px"
+          data-aos="zoom-out-up"
+          marginTop="0px"
+          maxWidth={{ base: "90%", sm: "80%", md: "70%", lg: "50%" }}
+          marginLeft="auto"
+          marginRight="auto"
+        >
+          <Heading fontWeight="2" fontSize={headingSize} >
+            contact me: 
+            ethanmlam@berkeley.edu
+          </Heading>
+          
+          {/* Add spacing here */}
+          <Box height="20px" />
+          
+          <Link
+            href="https://www.fivew.xyz"
+            isExternal
+            _hover={{ textDecoration: "none", transform: "scale(1.05)" }}
+            display={{ md: "none", lg: "block" }}
+          >
             <Button
               size="lg"
               variant="outline"
@@ -138,9 +135,9 @@ const imageSize = useBreakpointValue({ base: "250px"});
                 </Heading>
               </VStack>
             </Button>
-        </Link>
-    </Box>
-    </VStack>
+          </Link>
+        </Box>
+      </VStack>
     </Box>
   );
 }  

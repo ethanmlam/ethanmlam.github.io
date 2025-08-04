@@ -6,34 +6,29 @@ import {
   Stack,
   Text,
   Image,
-  Center,
+  VStack,
+  HStack,
+  Badge,
 } from "@chakra-ui/react";
 import "aos/dist/aos.css";
 // import ClassCard from "./classcard";
 
 export default function About() {
-
-  
   const headingSize = useBreakpointValue({ base: "100%", md: "xl" });
   const largeheadingSize = useBreakpointValue({ base: "100%", md: "4xl" });
   const imageSize = useBreakpointValue({ base: "250px", md: "250px" });
 
-
   return (
-
-    <Box flex="1"  marginLeft="30px" marginTop="75px" marginBottom="60px" marginRight={{base: "30", lg: '3%' }}>
-      {/* Your main content goes here */}
-      {/* <HeroSection x/> */}
+    <Box flex="1" marginLeft="30px" marginTop="75px" marginBottom="60px" marginRight={{ base: "30", lg: '3%' }}>
       <Stack
         direction={{ base: "column", md: "row", lg: "row" }}
         spacing={{ base: 5, md: 25 }}
         align={{ base: "center", md: "start" }}
-        justify={{ md: "space-between" }} // Add this line
+        justify={{ md: "space-between" }}
       >
-        {/* Text content */}
         <Box flex="1" pr={{ base: 0, md: 20 }}>
-          <Heading fontWeight="20" fontSize='2xl' textAlign="center" display = {{base: "block", md: "none"}}>
-            Hi there!<br></br>My name is Ethan Lam.<br></br> 
+          <Heading fontWeight="20" fontSize='2xl' textAlign="center" display={{ base: "block", md: "none" }}>
+            Hi there!<br></br>My name is Ethan Lam.<br></br>
           </Heading>
           <Image
             src="/ethan_pfp.jpeg"
@@ -41,22 +36,70 @@ export default function About() {
             w={imageSize}
             h={312.5}
             textAlign="center"
-            mx = "auto"
-            mb = "20px"
-            display = {{base: "block", md: "none"}}
+            mx="auto"
+            mb="20px"
+            display={{ base: "block", md: "none" }}
             className="rounded-md"
-          /> 
-          <Heading fontWeight="20" fontSize={largeheadingSize} display = {{base: "none", md: "block"}}>
+          />
+          <Heading fontWeight="20" fontSize={largeheadingSize} display={{ base: "none", md: "block" }}>
             Hi there! My name is Ethan Lam.
           </Heading>
-    
-        {/* Additional text content and buttons can be added here */}
-            <Text fontWeight="190" fontSize={headingSize} >
-                <br></br>I am a senior at UC Berkeley studying Engineering (EECS + IEOR).
-                <br></br>I am a builder passionate about creating end-to-end applications.
-                <br></br>My academic interests are in DeFi, generative AI, and emerging tech entrepreneurship. 
-                <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
-            </Text>
+
+          <Text fontWeight="190" fontSize={headingSize}>
+            <br></br>I am a senior at UC Berkeley studying Engineering (EECS + IEOR).
+            <br></br>I am a builder passionate about creating end-to-end applications.
+            <br></br>My academic interests are in DeFi, generative AI, and emerging tech entrepreneurship.
+            <br></br>I enjoy playing poker, watching LA sports, working out, and attending music festivals.
+          </Text>
+
+          <VStack align="start" spacing={8} mt={8}>
+            <Box>
+              <Heading size="md" mb={3}>achievements</Heading>
+              <VStack align="start" spacing={4}>
+                <HStack>
+                  <Badge colorScheme="green">1st Place</Badge>
+                  <Text>TreeHacks 2024</Text>
+                </HStack>
+                <HStack>
+                  <Badge colorScheme="blue">Winner</Badge>
+                  <Text>EigenLayer Hackathon</Text>
+                </HStack>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading size="md" mb={3}>previously</Heading>
+              <VStack align="start" spacing={4}>
+                <Text>- research @ cornell medicine</Text>
+                <Text>- 1st author presenting @ ismrm 2025 conf.</Text>
+                <Text>- created 1st ML vision model to label hemorrhagic cysts</Text>
+                <Text>- won a couple hs research competitions</Text>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading size="md" mb={3}>open source</Heading>
+              <VStack align="start" spacing={4}>
+                <Text>- built the most used medical dataset on roboflow at 14, helping 30k+ users</Text>
+                <Text>- chosen for rf100 benchmark (100/200k+ datasets) now used by meta ai & msft</Text>
+              </VStack>
+            </Box>
+
+            <Box>
+              <Heading size="md" mb={3}>locked-in for hs clubs</Heading>
+              <VStack align="start" spacing={4}>
+                <Text>- science olympiad team president (NY Rank #2, Nats Rank #9/7800 teams)</Text>
+                <Text>- frc robotics coding lead (engineering inspiration @ worlds, 8/3500 teams)</Text>
+              </VStack>
+            </Box>
+
+            <Box mt={6}>
+              <Text fontWeight="300">
+                my greatest ideas have come from interactions with people of the most different perspectives. so always feel free to reach out!
+              </Text>
+              <Text mt={2} fontWeight="300">cadenli2025@gmail.com</Text>
+            </Box>
+          </VStack>
         </Box>
       </Stack>
        

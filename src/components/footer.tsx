@@ -1,6 +1,6 @@
 import React from "react";
 import { Divider, Box, HStack, Link } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 
 const Footer: React.FC = () => {
   return (
@@ -11,9 +11,9 @@ const Footer: React.FC = () => {
           <Link href="https://github.com/ethanmlam" isExternal>
             <FaGithub size={24} />
           </Link>
-          {/* <Link href="https://twitter.com/adriankwann" isExternal>
+          <Link href="https://twitter.com/ethanmlam" isExternal>
             <FaTwitter size={24} />
-          </Link> */}
+          </Link>
           <Link href="https://www.linkedin.com/in/ethan-m-lam/" isExternal>
             <FaLinkedin size={24} />
           </Link>
