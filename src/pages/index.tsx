@@ -8,15 +8,10 @@ import {
 } from "@chakra-ui/react";
 
 import About from "../components/about";
-import LeftSidebar from "../components/leftsidebarEthan";
 import Footer from "../components/footer";
 import "@fontsource/lato/300.css";
 import "@fontsource/lato/400.css";
 import "@fontsource/lato/700.css";
-import "@fontsource/roboto/400.css";
-import "@fontsource/open-sans/400.css";
-import "@fontsource/montserrat/400.css";
-import "@fontsource-variable/space-grotesk";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ReactGA from 'react-ga';
@@ -31,18 +26,14 @@ ReactGA.initialize('G-E7JHH5RZTG');
 
 const theme = extendTheme({
   fonts: {
-    heading: "'Montserrat', san-serif",
-    heading2: "'Lato', serif",
-    heading3: "'Lato', serif",
-    body: "'Lato', san-serif",
+    heading: "'Lato', sans-serif",
+    body: "'Lato', sans-serif",
   },
-  components: {
-    Text: {
-      baseStyle: {
-        mark: {
-          bg: "green.200",
-          borderRadius: "4px",
-        },
+  styles: {
+    global: {
+      body: {
+        color: "gray.800",
+        lineHeight: "1.6",
       },
     },
   },
@@ -58,20 +49,10 @@ const Home: React.FC = () => {
           <link rel="icon" type="image/x-icon" href={newFavicon} />
         </Helmet>
         <CSSReset />
-        <Flex>
-          <Box>
-            <div id="hero-section">
-              <LeftSidebar />
-            </div>
-          </Box>
-
-          <Box maxWidth="100%" width="100%" marginLeft={{ base: "none", lg: "350px" }}>
-            <div id="about-section">
-              <About />
-            </div>
-            <Footer/>
-          </Box>
-        </Flex>
+        <Box maxWidth="800px" margin="0 auto" padding="40px 20px">
+          <About />
+          <Footer/>
+        </Box>
       </HelmetProvider>
     </ChakraProvider>
   );

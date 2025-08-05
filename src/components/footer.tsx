@@ -1,43 +1,14 @@
 import React from "react";
-import { Divider, Box, HStack, Link } from "@chakra-ui/react";
-import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
+import { Box, Text } from "@chakra-ui/react";
 
 const Footer: React.FC = () => {
   return (
-    <Box marginTop="35px">
-      <Divider orientation="horizontal" />
-      <footer style={footerStyle}>
-        <HStack justifyContent="center" spacing={4}>
-          <Link href="https://github.com/ethanmlam" isExternal>
-            <FaGithub size={24} />
-          </Link>
-          <Link href="https://twitter.com/ethanmlam" isExternal>
-            <FaTwitter size={24} />
-          </Link>
-          <Link href="https://www.linkedin.com/in/ethan-m-lam/" isExternal>
-            <FaLinkedin size={24} />
-          </Link>
-        </HStack>
-        <p style={footerText}>© 2024 Ethan Lam. Built on the T3 Stack.</p>
-      </footer>
+    <Box mt={16} pt={8} borderTop="1px" borderColor="gray.200">
+      <Text fontSize="sm" color="gray.500" textAlign="center">
+        © 2024 Ethan Lam
+      </Text>
     </Box>
   );
-};
-
-const footerStyle = {
-  display: "flex",
-  justifyContent: "center",
-  alignItems: "center",
-  backgroundColor: "white",
-  color: "black",
-  height: "80px",
-};
-
-const footerText = {
-  fontFamily: "Roboto, sans-serif",
-  fontWeight: 300,
-  fontSize: "0.875rem",
-  marginLeft: "10px",
 };
 
 export default Footer;
