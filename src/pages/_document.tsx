@@ -16,14 +16,14 @@ export default function Document() {
         {/* Open Graph */}
         <meta property="og:title" content="Ethan Lam" />
         <meta property="og:description" content="Builder, Engineer, and Entrepreneur" />
-        <meta property="og:image" content="/icon.svg" />
+        <meta property="og:image" content="/frontpagePreview.png" />
         <meta property="og:type" content="website" />
         
         {/* Twitter */}
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:title" content="Ethan Lam" />
         <meta name="twitter:description" content="Builder, Engineer, and Entrepreneur" />
-        <meta name="twitter:image" content="/icon.svg" />
+        <meta name="twitter:image" content="/frontpagePreview.png" />
       </Head>
       <body>
         <Main />
