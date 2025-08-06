@@ -19,8 +19,8 @@ export default function About() {
         <Image
           src="/ethan_pfp.jpeg"
           alt="Ethan Lam"
-          w={{ base: "130px", lg: "160px"}}
-          h={{ base: "130px", lg: "200px"}}
+          w={{ base: "130px"}}
+          h={{ base: "130px"}}
           borderRadius="12px"
           objectFit="cover"
           flexShrink={0}
