@@ -57,8 +57,8 @@ export default function About() {
       {/* Content */}
       <VStack spacing={12} align="start">
         <Box>
-          <Text fontSize="xl" lineHeight="1.7" color="gray.800" fontWeight="400">
-            Hey! I&apos;m a builder who loves creating and trying new AI applications. Recently graduated from UC Berkeley with a degree in Industrial Engineering & a minor in EECS. 
+          <Text fontSize={{ base: "lg", md: "xl" }} lineHeight="1.7" color="gray.800" fontWeight="400">
+            Hey! I&apos;m a builder who loves creating and trying new AI applications. Studied Industrial Engineering and EECS at UC Berkeley. 
           </Text>
         </Box>
 
