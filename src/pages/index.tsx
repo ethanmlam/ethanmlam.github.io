@@ -3,7 +3,6 @@ import {
   ChakraProvider,
   CSSReset,
   extendTheme,
-  Flex,
   Box,
 } from "@chakra-ui/react";
 
@@ -17,8 +16,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 import ReactGA from 'react-ga';
 declare global {
   interface Window {
-    dataLayer: any[];
-    gtag: (...args: any[]) => void;
+    dataLayer: unknown[];
+    gtag: (...args: unknown[]) => void;
   }
 }
 
@@ -40,13 +39,12 @@ const theme = extendTheme({
 });
 
 const Home: React.FC = () => {
-  const newFavicon = '/Users/ethanlam/website_code/testwebsite/public/favicon.ico';
   return (
     <ChakraProvider theme={theme}>
       <HelmetProvider>
         <Helmet>
           <title>Ethan Lam</title>
-          <link rel="icon" type="image/x-icon" href={newFavicon} />
+          <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         </Helmet>
         <CSSReset />
         <Box maxWidth="800px" margin="0 auto" padding="40px 20px">

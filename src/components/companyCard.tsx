@@ -25,7 +25,6 @@ const CompanyCard: React.FC<ClassCardProps> = ({
   description,
   link,
   logo,
-  delay,
 }) => {
   //lowered by two
   const width = useBreakpointValue({
@@ -35,11 +34,6 @@ const CompanyCard: React.FC<ClassCardProps> = ({
     lg: "30vh"
   });
 
-  const imageSize = useBreakpointValue({
-    base: "2em",
-    sm: "2.5em",
-    md: "3.5em",
-  });
 
   const headingSize = useBreakpointValue({
     base: "sm",
