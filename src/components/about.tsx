@@ -14,48 +14,58 @@ import { FaGithub, FaLinkedin, FaXTwitter, FaMapPin, FaRocket, FaGamepad, FaLapt
 export default function About() {
   return (
     <Box>
-      {/* Header */}
-      <Stack direction={{ base: "column", lg: "row" }} spacing={{ base: 6, lg: 8 }} align={{ base: "center", lg: "start" }} mb={12} mt={12}>
-        <Image
-          src="/ethan_pfp.jpeg"
-          alt="Ethan Lam"
-          w={{ base: "130px"}}
-          h={{ base: "130px"}}
-          borderRadius="12px"
-          objectFit="cover"
-          flexShrink={0}
-        />
-        <VStack align={{ base: "center", lg: "start" }} spacing={4} flex="1" textAlign={{ base: "center", lg: "left" }}>
-          <Heading fontSize={{ base: "3xl", md: "4xl" }} fontWeight="300">
-            Ethan Lam
-          </Heading>
-          <HStack spacing={{ base: 2, md: 4 }} mb={2} flexWrap="wrap" justifyContent={{ base: "center", lg: "flex-start" }}>
-            <Text fontSize={{ base: "md", md: "lg" }} color="gray.600">
-              @ethanmlam
-            </Text>
-            <Link href="https://x.com/mission__ctrl" isExternal _hover={{ color: "blue.600" }}>
-              <HStack spacing={1} color="gray.600" _hover={{ color: "blue.600" }}>
-                <FaMapPin size={14} />
-                <Text fontSize={{ base: "sm", md: "md" }}>Mission Control Hacker House (Satellite), SF</Text>
-              </HStack>
-            </Link>
-          </HStack>
-          <HStack spacing={6} justifyContent={{ base: "center", lg: "flex-start" }}>
-            <Link href="https://www.twitter.com/ethanmlam" isExternal color="black.900" _hover={{ color: "black.900", transform: "scale(1.5)" }} transition="all 0.2s" title="@ethanmlam">
-              <FaXTwitter size={20} />
-            </Link>
-            <Link href="https://github.com/ethanmlam" isExternal color="gray.600" _hover={{ color: "black.900", transform: "scale(1.5)", filter: "drop-shadow(0 0 8px #22c55e40)" }} transition="all 0.2s" title="@ethanmlam">
-              <FaGithub size={20} />
-            </Link>
-            <Link href="https://www.linkedin.com/in/ethanmlam/" isExternal color="gray.600" _hover={{ color: "blue.400", transform: "scale(1.5)" }} transition="all 0.2s" title="/in/ethan-m-lam">
-              <FaLinkedin size={20} />
-            </Link>
-          </HStack>
-        </VStack>
-      </Stack>
+      {/* Header: Name left (absolute), Image+Links centered */}
+      <Box position="relative" mt={12} mb={2} h="50px">
+        <Text 
+          fontSize="42px" 
+          fontWeight="500" 
+          fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
+          position="absolute"
+          left={0}
+          top="50%"
+          transform="translateY(-50%)"
+        >
+          Ethan Lam
+        </Text>
+        <Flex align="center" justify="center" gap={3} h="100%">
+          <Image
+            src="/ethan_pfp.jpeg"
+            alt="Ethan Lam"
+            w="42px"
+            h="42px"
+            borderRadius="sm"
+            objectFit="cover"
+          />
+          <Text fontSize="13px">
+            (<Link href="https://www.twitter.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>Twitter</Link>, <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, <Link href="https://github.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>GitHub</Link>)
+          </Text>
+        </Flex>
+      </Box>
 
-      {/* Content */}
-      <VStack spacing={12} align="start">
+      {/* Tagline - bold, centered */}
+      <Text fontWeight="bold" fontSize="15px" mb={10} textAlign="center">
+        Builder, researcher, and future-oriented optimist
+      </Text>
+
+      {/* Intro - italic */}
+      <Text fontStyle="italic" fontSize="13px" lineHeight="1.7" mb={6}>
+        I work on tools that help researchers and builders find what&apos;s worth building. I focus on surfacing signal from AI research, making sense of what matters.
+      </Text>
+
+      {/* Content Sections */}
+      <VStack spacing={5} align="stretch">
+        {/* Entrepreneurship */}
+        <Box>
+          <Text fontWeight="bold" mb={2}>Startup</Text>
+          <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
+            <ListItem>Co-founder of <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, a research-first platform for discovering and digesting AI research papers and emerging ideas</ListItem>
+            {/* <ListItem>Building FiveW as a "Twitter for AI research" that prioritizes signal, credit, and durable discourse over engagement mechanics</ListItem> */}
+        
+            <ListItem>Living at <Link href="https://mission-control-sf.notion.site/Mission-Control-0675b18cdc504436ba173afeeb791994" color="blue.600" textDecoration="underline" isExternal>Mission Control</Link>, the oldest continous hacker house in SF, founded by Thiel Fellows in 2013. Launchpad for companies like Scale, Hightouch, Pylon.</ListItem>
+          </UnorderedList>
+        </Box>
+
+        {/* AI, research, crypto */}
         <Box>
           <Text fontSize={{ base: "lg", md: "xl" }} lineHeight="1.7" color="gray.800" fontWeight="400">
             Hey! I&apos;m a builder who loves creating and trying new AI applications. Studied Industrial Engineering and EECS at UC Berkeley. 
