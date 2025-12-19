@@ -46,3 +46,6 @@ yarn-error.log*
 
 # Million Lint
 .million
+
+# Static export output
+out/
