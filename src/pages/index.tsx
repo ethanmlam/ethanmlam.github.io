@@ -8,9 +8,7 @@ import {
 
 import About from "../components/about";
 import Footer from "../components/footer";
-import "@fontsource/lato/300.css";
-import "@fontsource/lato/400.css";
-import "@fontsource/lato/700.css";
+// Using system fonts - no imports needed
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import ReactGA from 'react-ga';
@@ -25,14 +23,15 @@ ReactGA.initialize('G-E7JHH5RZTG');
 
 const theme = extendTheme({
   fonts: {
-    heading: "'Lato', sans-serif",
-    body: "'Lato', sans-serif",
+    heading: "Georgia, 'Times New Roman', serif",
+    body: "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif",
   },
   styles: {
     global: {
       body: {
         color: "gray.800",
-        lineHeight: "1.6",
+        lineHeight: "1.7",
+        fontSize: "13px",
       },
     },
   },
@@ -47,7 +46,7 @@ const Home: React.FC = () => {
           <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         </Helmet>
         <CSSReset />
-        <Box maxWidth="800px" margin="0 auto" padding="40px 20px">
+        <Box maxWidth="1100px" margin="0 auto" padding="40px 20px">
           <About />
           <Footer/>
         </Box>
