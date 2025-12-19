@@ -70,8 +70,8 @@ export default function About() {
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
             <ListItem>Built <Link href="https://devpost.com/software/zknowledge-base" color="blue.600" textDecoration="underline" isExternal>zKnowledge Base</Link>, a semantic search engine for research papers (won Best Decentralized App at TreeHacks 2024, raised six figures and placed 3rd at Codebase Demo Day as the sole collegiate team)</ListItem>
             <ListItem>Built <Link href="https://forum.eigenlayer.xyz/t/reliablocks-developing-reliability-scores-for-non-finalized-blocks-in-optimistic-rollups-devcon-hacker-house-2024/14138" color="blue.600" textDecoration="underline" isExternal>Reliablocks</Link>, a trustworthiness model for Ethereum L2 blocks (won Architecture Prize at EigenLayer Infinite Hackathon, DevCon Bangkok)</ListItem>
-            <ListItem>Contract engineer at <Link href="https://bittensor.com/" color="blue.600" textDecoration="underline" isExternal>Bittensor</Link> building a unified API and routing layer for subnets, inspired by OpenRouter</ListItem>
-            <ListItem>PM intern at <Link href="https://affogato.ai/" color="blue.600" textDecoration="underline" isExternal>Affogato AI</Link> (YC S21) researching stablecoin payment solutions</ListItem>
+            <ListItem>Software engineer at <Link href="https://bittensor.com/" color="blue.600" textDecoration="underline" isExternal>Bittensor</Link> building a unified API and routing layer for subnets, inspired by OpenRouter</ListItem>
+            <ListItem>Product intern at <Link href="https://affogato.ai/" color="blue.600" textDecoration="underline" isExternal>Affogato AI</Link> (YC S21) researching stablecoin payment solutions</ListItem>
             <ListItem>Campus Ambassador at <Link href="https://www.perplexity.ai/" color="blue.600" textDecoration="underline" isExternal>Perplexity</Link> leading early growth initiatives</ListItem>
             <ListItem>Research with <Link href="https://blockchain.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>Blockchain at Berkeley</Link></ListItem>
           </UnorderedList>
