@@ -43,7 +43,7 @@ export default function About() {
 
       {/* Tagline - bold, centered */}
       <Text fontWeight="bold" fontSize="15px" mb={10} textAlign="center">
-        Builder, researcher, and future-oriented optimist
+        Technology founder, researcher, and early adopter
       </Text>
 
       {/* Intro - italic */}

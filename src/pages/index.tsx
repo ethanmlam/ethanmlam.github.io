@@ -18,8 +18,7 @@ const Home: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>Ethan Lam</title>
-        <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+        <title>Ethan Lam | Technology founder, researcher, and early adopter</title>
       </Helmet>
       <Box maxWidth="1100px" margin="0 auto" padding="40px 20px">
         <About />
