@@ -54,18 +54,6 @@ export default function About() {
       {/* Content Sections */}
       <VStack spacing={5} align="stretch">
         {/* Entrepreneurship */}
-<<<<<<< HEAD
-        <Box>
-          <Text fontWeight="bold" mb={2}>Startup</Text>
-          <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
-            <ListItem>Co-founder of <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, a research-first platform for discovering and digesting AI research papers and emerging ideas</ListItem>
-            {/* <ListItem>Building FiveW as a "Twitter for AI research" that prioritizes signal, credit, and durable discourse over engagement mechanics</ListItem> */}
-        
-            <ListItem>Living at <Link href="https://mission-control-sf.notion.site/Mission-Control-0675b18cdc504436ba173afeeb791994" color="blue.600" textDecoration="underline" isExternal>Mission Control</Link>, the oldest continous hacker house in SF, founded by Thiel Fellows in 2013. Launchpad for companies like Scale, Hightouch, Pylon.</ListItem>
-          </UnorderedList>
-        </Box>
-
-        {/* AI, research, crypto */}
         <Box>
           <Text fontWeight="bold" mb={2}>Startup</Text>
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
