@@ -16,6 +16,9 @@ export default function Document() {
         <meta name="theme-color" content="#0A2540" />
         <meta name="author" content="Ethan Lam" />
         
+        {/* Google Search Console verification */}
+        <meta name="google-site-verification" content="94vU4SohbqtwbJSEsync9yuvXWGOjukJf1QBPhjkDPg" />
+        
         {/* Open Graph */}
         <meta property="og:title" content="Ethan Lam" />
         <meta property="og:description" content="Technology founder, researcher, and early adopter" />
