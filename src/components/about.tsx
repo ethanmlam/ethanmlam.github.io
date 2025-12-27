@@ -13,20 +13,33 @@ import {
 export default function About() {
   return (
     <Box>
-      {/* Header: Name left (absolute), Image+Links centered */}
-      <Box position="relative" mt={12} mb={2} h="50px">
+      {/* Header: Name left, Image+Links centered on desktop; stacked on mobile */}
+      <Flex 
+        mt={12} 
+        mb={2} 
+        direction={{ base: "column", md: "row" }}
+        align={{ base: "center", md: "center" }}
+        justify={{ base: "center", md: "space-between" }}
+        position="relative"
+        minH={{ base: "auto", md: "50px" }}
+        gap={{ base: 3, md: 0 }}
+      >
         <Text 
           fontSize="42px" 
           fontWeight="500" 
           fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
-          position="absolute"
-          left={0}
-          top="50%"
-          transform="translateY(-50%)"
+          flexShrink={0}
         >
           Ethan Lam
         </Text>
-        <Flex align="center" justify="center" gap={3} h="100%">
+        <Flex 
+          align="center" 
+          justify="center" 
+          gap={3}
+          position={{ base: "static", md: "absolute" }}
+          left={{ md: "50%" }}
+          transform={{ md: "translateX(-50%)" }}
+        >
           <Image
             src="/ethan_pfp.jpeg"
             alt="Ethan Lam"
@@ -39,7 +52,7 @@ export default function About() {
             (<Link href="https://www.twitter.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>Twitter</Link>, <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, <Link href="https://github.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>GitHub</Link>)
           </Text>
         </Flex>
-      </Box>
+      </Flex>
 
       {/* Tagline - bold, centered */}
       <Text fontWeight="bold" fontSize="15px" mb={10} textAlign="center">
