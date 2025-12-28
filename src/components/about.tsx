@@ -104,7 +104,7 @@ export default function About() {
         {/* Background */}
         <Box>
           <Text fontWeight="bold" mb={2}>Background.</Text>
-          <Text fontSize="13px" lineHeight="1.7">
+          <Text fontSize="13px" lineHeight="1.7" mb={3}>
             Studied <Link href="https://ieor.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>Industrial Engineering</Link> with a minor in <Link href="https://eecs.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>EECS</Link> at <Link href="https://www.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>UC Berkeley</Link>. Grounded in optimization, simulation, databases, and large-scale system design.
           </Text>
         </Box>
@@ -112,13 +112,13 @@ export default function About() {
         {/* Outside of work */}
         <Box>
           <Text fontWeight="bold" mb={2}>Outside of work.</Text>
-          <Text fontSize="13px">Food, poker, <Link href="https://www.strava.com/athletes/34314019" color="blue.600" textDecoration="underline" isExternal>running</Link>, concerts, and reading.</Text>
+          <Text fontSize="13px" mb={3}>Food, poker, <Link href="https://www.strava.com/athletes/34314019" color="blue.600" textDecoration="underline" isExternal>running</Link>, concerts, and reading.</Text>
         </Box>
 
         {/* Recent reading */}
         <Box>
           <Text fontWeight="bold" mb={2}>Recent reading.</Text>
-          <UnorderedList spacing={1} fontSize="13px" pl={8}>
+          <UnorderedList spacing={1} fontSize="13px" mb={3} pl={8}>
             <ListItem><Link href="https://paulgraham.com/articles.html" color="blue.600" textDecoration="underline" isExternal>Paul Graham Essays</Link> by PG</ListItem>
             <ListItem><Link href="https://www.amazon.com/High-Growth-Handbook-Scaling-Startups/dp/1732265100" color="blue.600" textDecoration="underline" isExternal>High Growth Handbook</Link> by Elad Gil</ListItem>
             <ListItem><Link href="https://www.amazon.com/Why-Greatness-Cannot-Planned-Objective/dp/3319155237" color="blue.600" textDecoration="underline" isExternal>Why Greatness Cannot Be Planned</Link> by Kenneth O. Stanley and Joel Lehman</ListItem>
@@ -134,7 +134,7 @@ export default function About() {
           <Text fontSize="13px" lineHeight="1.7">
             My best ideas come from talking with people who think differently.
           </Text>
-          <Text fontSize="13px" lineHeight="1.7">
+          <Text fontSize="13px" lineHeight="1.7" mb={3}>
             Always down to chat: <Link href="mailto:ethanmlam@berkeley.edu" color="blue.600" textDecoration="underline">ethanmlam@berkeley.edu</Link>
           </Text>
         </Box>
