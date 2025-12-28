@@ -4,3 +4,6 @@ Allow: /
 
 # Sitemap location
 Sitemap: https://ethanmlam.github.io/sitemap.xml
+
+# Additional crawl guidance
+Crawl-delay: 1
