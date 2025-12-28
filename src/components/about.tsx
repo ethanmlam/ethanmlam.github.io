@@ -79,7 +79,17 @@ export default function About() {
 
         {/* AI, research, crypto */}
         <Box>
-          <Text fontWeight="bold" mb={2}>AI, research, and crypto.</Text>
+          <Flex align="center" gap={4} mb={2}>
+            <Text fontWeight="bold">AI, research, and crypto.</Text>
+            <Flex gap={2} align="center">
+              <Image src="/treehacks.jpg" alt="TreeHacks" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
+              <Image src="/eigenlayer.jpg" alt="EigenLayer" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
+              <Image src="/bittensor.png" alt="Bittensor" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
+              <Image src="/affogato.png" alt="Affogato" w="20px" h="20px" objectFit="contain" />
+              <Image src="/perplexity.png" alt="Perplexity" w="20px" h="20px" objectFit="contain" />
+              <Image src="/bab.jpeg" alt="Blockchain at Berkeley" w="20px" h="20px" objectFit="contain" />
+            </Flex>
+          </Flex>
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
             <ListItem>Built <Link href="https://devpost.com/software/zknowledge-base" color="blue.600" textDecoration="underline" isExternal>zKnowledge Base</Link>, a semantic search engine for research papers (won Best Decentralized App at TreeHacks 2024, raised six figures and placed <Link href="https://x.com/el33th4xor/status/1796272202481885440?s=20" color="blue.600" textDecoration="underline" isExternal>3rd at Codebase Demo Day</Link> as the sole collegiate team)</ListItem>
             <ListItem>Built <Link href="https://forum.eigenlayer.xyz/t/reliablocks-developing-reliability-scores-for-non-finalized-blocks-in-optimistic-rollups-devcon-hacker-house-2024/14138" color="blue.600" textDecoration="underline" isExternal>Reliablocks</Link>, a trustworthiness model for Ethereum L2 blocks (won Architecture Prize at EigenLayer Infinite Hackathon, DevCon Bangkok)</ListItem>
@@ -119,12 +129,12 @@ export default function About() {
         <Box>
           <Text fontWeight="bold" mb={2}>Recent reading.</Text>
           <UnorderedList spacing={1} fontSize="13px" mb={3} pl={8}>
+            <ListItem><Link href="https://www.amazon.com/Apple-China-Inside-Global-Superpower/dp/1952728592" color="blue.600" textDecoration="underline" isExternal>Apple in China</Link> by Patrick McGee</ListItem>
             <ListItem><Link href="https://paulgraham.com/articles.html" color="blue.600" textDecoration="underline" isExternal>Paul Graham Essays</Link> by PG</ListItem>
             <ListItem><Link href="https://www.amazon.com/High-Growth-Handbook-Scaling-Startups/dp/1732265100" color="blue.600" textDecoration="underline" isExternal>High Growth Handbook</Link> by Elad Gil</ListItem>
             <ListItem><Link href="https://www.amazon.com/Why-Greatness-Cannot-Planned-Objective/dp/3319155237" color="blue.600" textDecoration="underline" isExternal>Why Greatness Cannot Be Planned</Link> by Kenneth O. Stanley and Joel Lehman</ListItem>
             <ListItem><Link href="https://www.amazon.com/Range-Generalists-Triumph-Specialized-World/dp/0735214484" color="blue.600" textDecoration="underline" isExternal>Range</Link> by David Epstein</ListItem>
             <ListItem><Link href="https://www.amazon.com/More-Money-Than-God-Hedge/dp/0143119419" color="blue.600" textDecoration="underline" isExternal>More Money Than God</Link> by Sebastian Mallaby</ListItem>
-            <ListItem><Link href="https://www.amazon.com/Bad-Blood-Secrets-Silicon-Startup/dp/152473165X" color="blue.600" textDecoration="underline" isExternal>Bad Blood</Link> by John Carreyrou</ListItem>
           </UnorderedList>
         </Box>
 
