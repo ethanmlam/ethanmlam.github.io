@@ -15,7 +15,7 @@ export default function About() {
     <Box>
       {/* Header: Name left, Image+Links centered on desktop; stacked on mobile */}
       <Flex 
-        mt={12} 
+        mt={{ base: 3, md: 12 }} 
         mb={2} 
         direction={{ base: "column", md: "row" }}
         align={{ base: "center", md: "center" }}
@@ -49,7 +49,7 @@ export default function About() {
             objectFit="cover"
           />
           <Text fontSize="13px">
-            (<Link href="https://www.twitter.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>Twitter</Link>, <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, <Link href="https://github.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>GitHub</Link>)
+            (<Link href="https://www.twitter.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>Twitter</Link>, <Link href="https://github.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>GitHub</Link>, <Link href="https://www.linkedin.com/in/ethanmlam/" color="blue.600" textDecoration="underline" isExternal>LinkedIn</Link>)
           </Text>
         </Flex>
       </Flex>
@@ -73,7 +73,7 @@ export default function About() {
             <ListItem>Co-founder of <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, a focused Twitter for AI research</ListItem>
             {/* <ListItem>Building FiveW as a "Twitter for AI research" that prioritizes signal, credit, and durable discourse over engagement mechanics</ListItem> */}
         
-            <ListItem>Living at <Link href="https://mission-control-sf.notion.site/Mission-Control-0675b18cdc504436ba173afeeb791994" color="blue.600" textDecoration="underline" isExternal>Mission Control</Link>, the oldest continous hacker house in SF, founded by Thiel Fellows in 2013. Launchpad for companies like Scale, Hightouch, Pylon.</ListItem>
+            <ListItem>Living at <Link href="https://mission-control-sf.notion.site/Mission-Control-0675b18cdc504436ba173afeeb791994" color="blue.600" textDecoration="underline" isExternal>Mission Control</Link>, the oldest continous hacker house in SF, founded by Thiel Fellows in 2013. Launchpad for companies like <Link href="https://scale.com" color="blue.600" textDecoration="underline" isExternal>Scale</Link>, <Link href="https://hightouch.com" color="blue.600" textDecoration="underline" isExternal>Hightouch</Link>, <Link href="https://usepylon.com" color="blue.600" textDecoration="underline" isExternal>Pylon</Link>.</ListItem>
           </UnorderedList>
         </Box>
 
@@ -132,17 +132,10 @@ export default function About() {
         <Box>
           <Text fontWeight="bold" mb={2}>Get in touch.</Text>
           <Text fontSize="13px" lineHeight="1.7">
-            My best ideas come from talking with people who think differently. Always down to chat: <Link href="mailto:ethanmlam@berkeley.edu" color="blue.600" textDecoration="underline">ethanmlam@berkeley.edu</Link>
+            My best ideas come from talking with people who think differently.
           </Text>
-        </Box>
-
-        {/* Where you can find me */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Where you can find me.</Text>
-          <Text fontSize="13px">
-            <Link href="https://www.twitter.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>Twitter</Link>,{" "}
-            <Link href="https://github.com/ethanmlam" color="blue.600" textDecoration="underline" isExternal>GitHub</Link>,{" "}
-            <Link href="https://www.linkedin.com/in/ethanmlam/" color="blue.600" textDecoration="underline" isExternal>LinkedIn</Link>
+          <Text fontSize="13px" lineHeight="1.7">
+            Always down to chat: <Link href="mailto:ethanmlam@berkeley.edu" color="blue.600" textDecoration="underline">ethanmlam@berkeley.edu</Link>
           </Text>
         </Box>
       </VStack>

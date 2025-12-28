@@ -15,7 +15,11 @@ const Footer: React.FC = () => {
           Give me anonymous feedback ↗
         </Link>
         <Text fontSize="sm" color="gray.500" textAlign="center">
-          © 2025 Ethan Lam
+          © 2026 Ethan Lam{" "}
+          <Text as="span" mx={2}>·</Text>{" "}
+          <Link href="https://www.twitter.com/ethanmlam" color="blue.500" textDecoration="underline" isExternal _hover={{ color: "blue.600" }}>Twitter</Link>,{" "}
+          <Link href="https://github.com/ethanmlam" color="blue.500" textDecoration="underline" isExternal _hover={{ color: "blue.600" }}>GitHub</Link>,{" "}
+          <Link href="https://www.linkedin.com/in/ethanmlam/" color="blue.500" textDecoration="underline" isExternal _hover={{ color: "blue.600" }}>LinkedIn</Link>
         </Text>
       </VStack>
     </Box>
