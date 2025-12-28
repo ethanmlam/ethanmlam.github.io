@@ -12,7 +12,7 @@ import {
 
 export default function About() {
   return (
-    <Box>
+    <Box as="main" role="main">
       {/* Header: Name left, Image+Links centered on desktop; stacked on mobile */}
       <Flex 
         mt={{ base: 3, md: 12 }} 
@@ -25,6 +25,7 @@ export default function About() {
         gap={{ base: 3, md: 0 }}
       >
         <Text 
+          as="h1"
           fontSize="42px" 
           fontWeight="500" 
           fontFamily="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif"
@@ -55,7 +56,7 @@ export default function About() {
       </Flex>
 
       {/* Tagline - bold, centered */}
-      <Text fontWeight="bold" fontSize="15px" mb={10} textAlign="center">
+      <Text as="h2" fontWeight="bold" fontSize="15px" mb={10} textAlign="center">
         Technology founder, researcher, and early adopter
       </Text>
 
@@ -67,8 +68,8 @@ export default function About() {
       {/* Content Sections */}
       <VStack spacing={5} align="stretch">
         {/* Entrepreneurship */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Startup</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>Startup</Text>
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
             <ListItem>Co-founder of <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, a focused Twitter for AI research</ListItem>
             {/* <ListItem>Building FiveW as a "Twitter for AI research" that prioritizes signal, credit, and durable discourse over engagement mechanics</ListItem> */}
@@ -78,9 +79,9 @@ export default function About() {
         </Box>
 
         {/* AI, research, crypto */}
-        <Box>
+        <Box as="section">
           <Flex align="center" gap={4} mb={2}>
-            <Text fontWeight="bold">AI, research, and crypto.</Text>
+            <Text as="h3" fontWeight="bold">AI, research, and crypto.</Text>
             <Flex gap={2} align="center">
               <Image src="/treehacks.jpg" alt="TreeHacks" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
               <Image src="/eigenlayer.jpg" alt="EigenLayer" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
@@ -101,8 +102,8 @@ export default function About() {
         </Box>
 
         {/* How I operate */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>How I operate.</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>How I operate.</Text>
           <Text fontSize="13px" lineHeight="1.7" mb={3}>
             Technical founder shipping full-stack systems. Multidisciplinary by default, comfortable moving between systems design, product, research, and distribution.
           </Text>
@@ -112,22 +113,22 @@ export default function About() {
         </Box>
 
         {/* Background */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Background.</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>Background.</Text>
           <Text fontSize="13px" lineHeight="1.7" mb={3}>
             Studied <Link href="https://ieor.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>Industrial Engineering</Link> with a minor in <Link href="https://eecs.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>EECS</Link> at <Link href="https://www.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>UC Berkeley</Link>. Grounded in optimization, simulation, databases, and large-scale system design.
           </Text>
         </Box>
 
         {/* Outside of work */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Outside of work.</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>Outside of work.</Text>
           <Text fontSize="13px" mb={3}>Food, poker, <Link href="https://www.strava.com/athletes/34314019" color="blue.600" textDecoration="underline" isExternal>running</Link>, concerts, and reading.</Text>
         </Box>
 
         {/* Recent reading */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Recent reading.</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>Recent reading.</Text>
           <UnorderedList spacing={1} fontSize="13px" mb={3} pl={8}>
             <ListItem><Link href="https://www.amazon.com/Apple-China-Inside-Global-Superpower/dp/1952728592" color="blue.600" textDecoration="underline" isExternal>Apple in China</Link> by Patrick McGee</ListItem>
             <ListItem><Link href="https://paulgraham.com/articles.html" color="blue.600" textDecoration="underline" isExternal>Paul Graham Essays</Link> by PG</ListItem>
@@ -139,8 +140,8 @@ export default function About() {
         </Box>
 
         {/* Get in touch */}
-        <Box>
-          <Text fontWeight="bold" mb={2}>Get in touch.</Text>
+        <Box as="section">
+          <Text as="h3" fontWeight="bold" mb={2}>Get in touch.</Text>
           <Text fontSize="13px" lineHeight="1.7">
             My best ideas come from talking with people who think differently.
           </Text>
