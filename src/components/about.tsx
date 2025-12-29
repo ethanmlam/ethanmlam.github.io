@@ -69,7 +69,12 @@ export default function About() {
       <VStack spacing={5} align="stretch">
         {/* Entrepreneurship */}
         <Box as="section">
-          <Text as="h3" fontWeight="bold" mb={2}>Startup</Text>
+          <Flex align="center" gap={4} mb={2}>
+            <Text as="h3" fontWeight="bold">Startup.</Text>
+            <Flex align="center">
+              <Image src="/fivew.png" alt="FiveW" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+            </Flex>
+          </Flex>
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
             <ListItem>Co-founder of <Link href="https://fivew.xyz" color="blue.600" textDecoration="underline" isExternal>FiveW</Link>, a focused Twitter for AI research</ListItem>
             {/* <ListItem>Building FiveW as a "Twitter for AI research" that prioritizes signal, credit, and durable discourse over engagement mechanics</ListItem> */}
@@ -81,14 +86,14 @@ export default function About() {
         {/* AI, research, crypto */}
         <Box as="section">
           <Flex align="center" gap={4} mb={2}>
-            <Text as="h3" fontWeight="bold">AI, research, and crypto.</Text>
-            <Flex gap={2} align="center">
-              <Image src="/treehacks.jpg" alt="TreeHacks" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
-              <Image src="/eigenlayer.jpg" alt="EigenLayer" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
-              <Image src="/bittensor.png" alt="Bittensor" w="20px" h="20px" objectFit="contain" border="1px solid #666666" />
-              <Image src="/affogato.png" alt="Affogato" w="20px" h="20px" objectFit="contain" />
-              <Image src="/perplexity.png" alt="Perplexity" w="20px" h="20px" objectFit="contain" />
-              <Image src="/bab.jpeg" alt="Blockchain at Berkeley" w="20px" h="20px" objectFit="contain" />
+            <Text as="h3" fontWeight="bold">AI, blockchain, and research.</Text>
+            <Flex align="center">
+              <Image src="/treehacks.jpg" alt="TreeHacks" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+              <Image src="/eigenlayer.jpg" alt="EigenLayer" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+              <Image src="/bittensor.png" alt="Bittensor" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+              <Image src="/affogato.png" alt="Affogato" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+              <Image src="/perplexity.png" alt="Perplexity" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+              <Image src="/bab.jpeg" alt="Blockchain at Berkeley" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
             </Flex>
           </Flex>
           <UnorderedList spacing={2} fontSize="13px" mb={3} pl={8}>
@@ -114,7 +119,12 @@ export default function About() {
 
         {/* Background */}
         <Box as="section">
-          <Text as="h3" fontWeight="bold" mb={2}>Background.</Text>
+          <Flex align="center" gap={4} mb={2}>
+            <Text as="h3" fontWeight="bold">Background.</Text>
+            <Flex align="center">
+              <Image src="/berkeley.png" alt="UC Berkeley" w="20px" h="20px" objectFit="contain" boxShadow="0 2px 6px rgba(0,0,0,0.28)" />
+            </Flex>
+          </Flex>
           <Text fontSize="13px" lineHeight="1.7" mb={3}>
             Studied <Link href="https://ieor.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>Industrial Engineering</Link> with a minor in <Link href="https://eecs.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>EECS</Link> at <Link href="https://www.berkeley.edu/" color="blue.600" textDecoration="underline" isExternal>UC Berkeley</Link>. Grounded in optimization, simulation, databases, and large-scale system design.
           </Text>
